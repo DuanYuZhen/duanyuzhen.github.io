@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-02T14:55:23.683Z</updated>
+  <updated>2016-10-02T14:36:57.393Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,26 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/10/02/Hello-World-0/"/>
-    <id>http://yoursite.com/2016/10/02/Hello-World-0/</id>
-    <published>2016-10-02T14:52:39.000Z</published>
-    <updated>2016-10-02T14:55:23.683Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="hello-world正文内容"><a href="#hello-world正文内容" class="headerlink" title="hello world正文内容"></a>hello world正文内容</h1>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;hello-world正文内容&quot;&gt;&lt;a href=&quot;#hello-world正文内容&quot; class=&quot;headerlink&quot; title=&quot;hello world正文内容&quot;&gt;&lt;/a&gt;hello world正文内容&lt;/h1&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2016/10/02/hello-world/"/>
-    <id>http://yoursite.com/2016/10/02/hello-world/</id>
+    <link href="http://yoursite.com/2016/10/02/Hello%20World/"/>
+    <id>http://yoursite.com/2016/10/02/Hello World/</id>
     <published>2016-10-02T14:36:57.393Z</published>
     <updated>2016-10-02T14:36:57.393Z</updated>
     
