@@ -280,6 +280,197 @@
             
               
                 
+                <a class="post-title-link" href="/2017/03/24/跨域问题_1/" itemprop="url">
+                  跨域问题_1
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-24T17:40:46+08:00" content="2017-03-24">
+              2017-03-24
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/24/跨域问题_1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/24/跨域问题_1/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+
+          
+          
+             <span id="/2017/03/24/跨域问题_1/" class="leancloud_visitors" data-flag-title="跨域问题_1">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;跨域问题&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- 域：(Domain)
+ 1.顶级域名
+    （1）国家顶级域名：
+        200多个国家都按照ISO3166国家代码分配了顶级域名，
+        例如中国是.cn，美国是.us，日本是.jp等；
+    （2）国际顶级域名：
+        工商企业的 .Com，表示网络提供商的.net，表示非盈利组织的.org。
+
+    注意：
+        大多数域名争议都发生在com的顶级域名下，因为多数公司上网的目的都是为了赢利。
+        国际组织经过广泛协商，在原来三个国际通用顶级域名的基础上，
+        新增加了7个国际通用顶级域名：
+            .firm（公司企业）、
+            .store（销售公司或企业）、
+            .Web（突出WWW活动的单位）、
+            .arts（突出文化、娱乐活动的单位）、
+            .rec (突出消遣、娱乐活动的单位)、
+            .info (提供信息服务的单位)、
+            .nom(个人)，
+        并在世界范围内选择新的注册机构来受理域名注册申请。
+
+    （3）我国的顶级域名
+    我国在国际互联网络信息中心(Inter NIC)正式注册并运行的顶级域名是.cn,这也是我国的一级域名。
+ 2.多级域名
+    *凡顶级域名前加前缀的都是该顶级域名的子域名，而子域名根据技术的多少分为二级子域名，三级子域名以及多级子域名。
+
+    （1）二级域名
+      在国际顶级域名下，它是指域名注册人的网上名称，
+        例如 &quot;.ibm&quot;，&quot;.yahoo&quot;，&quot;.microsoft&quot;等；
+
+      在国家顶级域名下，它是表示注册企业类别的符号，
+        例如&quot;.com&quot;，&quot;.edu&quot;，&quot;.gov&quot;，&quot;.net&quot;等。
+
+     (2)我国的二级域名
+     在顶级域名之下，我国的二级域名又分为类别域名和行政区域名两类。
+     *类别域名共6个，包括:
+          用于科研机构的.ac；
+          用于工商金融企业的.com；用于教育机构的.edu；
+          用于政府部门的.gov；
+          用于互联网络信息中心和运行中心的.net；
+          用于非盈利组织的.org。
+     *行政区域名有34个，分别对应于我国各省、自治区和直辖市。
+
+     (3)三级域名
+     三级域名用字母（a～z）、数字（0～9）和连接符（－）组成，
+     各级域名之间用实点（.）连接，三级域名的长度不能超过20个字符。 
+     如无特殊原因，采用申请人的英文名(或者缩写)或者汉语拼音名(或者缩写)作为三级域名，以保持域名的清晰性和简洁性。
+ 跨域：
+    1.解释：javascript出于安全方面的考虑，不允许跨域调用其他页面的对象
+            由于JavaScript同源策略的限制，出现跨域问题
+    2.跨域的出现与否：
+        （1）没有跨域问题：同一域名，不同文件夹
+        （2）跨域：
+                —— 同一域名，端口不同
+                —— 同一域名，协议不同
+                —— 域名和域名对应ip
+                —— 主域相同，子域不同
+                    http://www.a.com/a.js
+                    http://script.a.com/b.js
+                —— 同一域名，不同二级域名（同上）——cookie这种情况下也不允许访问
+                    http://www.a.com/a.js
+                    http://a.com/b.js
+                —— 不同域名
+        （3）注意：
+        如果是协议、端口造成跨域问题，前台是无能为力的
+        在跨域问题上，域仅仅是通过“URL的首部”来识别而不会去尝试判断相同的ip地址对应着两个域或两个域是否在同一个ip上。
+        “URL的首部”指window.location.protocol(协议) +window.location.host(域名:包括ip和端口)
+            即：Domains, protocols and ports must match”
+ --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+       <!-- render方法第二个参数is_index为是否为首页 -->
+       <!-- 第三个参数is_pv为我们刚才设置的是否显示计数 -->
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/03/24/jQuery中ajax的4种常用请求方式/" itemprop="url">
                   jQuery中ajax的4种常用请求方式
                 </a>
@@ -355,33 +546,52 @@
 &lt;script&gt;
 
 /*jQuery中ajax的4种常用请求方式：*/
-</code></pre><p>// 1—————————-<br>// $.ajax()返回其创建的 XMLHttpRequest 对象。<br>// $.ajax() 只有一个参数：参数 key/value 对象，包含各配置及回调函数信息。<br>// 如果你指定了 dataType 选项，请确保服务器返回正确的 MIME 信息，(如 xml 返回 “text/xml”)</p>
-<pre><code>// $.ajax({
-//        type: &quot;post&quot;,
-//        dataType: &quot;html&quot;,//服务器返回的文本格式
-//        url: &apos;/Resources/GetList.ashx&apos;,
-//        data: dataurl,//请求的数据
-//        success: function (data) {
-//            if (data != &quot;&quot;) {
-//                $(&quot;#pager&quot;).pager({
-                       pagenumber: pagenumber, 
-                       pagecount: data.split(&quot;&quot;)[1], 
-                       buttonClickCallback: PageClick 
-                   });                 
-                  $(&quot;#anhtml&quot;).html(data.split(&quot;&quot;)[0]);
-//            }
-//        }
-//    });
-</code></pre><p>// 2—————————-<br>// 通过远程 HTTP GET 请求载入信息。<br>// 简单的 GET 请求功能以取代复杂$.ajax 请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。  </p>
-<pre><code>// $.get(
+// 1----------------------------  
+// $.ajax()返回其创建的 XMLHttpRequest 对象。  
+// $.ajax() 只有一个参数：参数 key/value 对象，包含各配置及回调函数信息。  
+// 如果你指定了 dataType 选项，请确保服务器返回正确的 MIME 信息，(如 xml 返回 &quot;text/xml&quot;)
+
+ // $.ajax({
+ //        type: &quot;post&quot;,
+ //        dataType: &quot;html&quot;,//服务器返回的文本格式
+ //        url: &apos;/Resources/GetList.ashx&apos;,
+ //        data: dataurl,//请求的数据
+ //        success: function (data) {
+ //            if (data != &quot;&quot;) {
+ //                $(&quot;#pager&quot;).pager({
+                        pagenumber: pagenumber, 
+                        pagecount: data.split(&quot;&quot;)[1], 
+                        buttonClickCallback: PageClick 
+                    });                 
+                   $(&quot;#anhtml&quot;).html(data.split(&quot;&quot;)[0]);
+ //            }
+ //        }
+ //    });
+
+
+
+// 2----------------------------  
+// 通过远程 HTTP GET 请求载入信息。  
+// 简单的 GET 请求功能以取代复杂$.ajax 请求成功时可调用回调函数。
+   如果需要在出错时执行函数，请使用 $.ajax。  
+
+// $.get(
 //     &quot;../saveUser.action&quot;, //请求路径
 //     { name: &quot;John&quot;, time: &quot;2pm&quot; },//请求数据
 //     function(data,status){//响应的数据、响应的状态
 //         alert(&quot;Data Loaded: &quot; + data);//数据处理
 //     }
 // ); 
-</code></pre><p>// 3.—————————–<br>// 通过远程 HTTP POST 请求载入信息。<br>// 简单的 POST 请求功能以取代复杂 $.ajax 。请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。  </p>
-<pre><code>//  $.post(
+
+
+
+
+// 3.-----------------------------  
+// 通过远程 HTTP POST 请求载入信息。  
+// 简单的 POST 请求功能以取代复杂 $.ajax 。
+   请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。  
+
+//  $.post(
 //     &quot;/Resources/addfriend.ashx&quot;, 
 //     { &quot;fid&quot;: fids, &quot;fname&quot;: fnames, &quot;tuid&quot;: tuids, &quot;tuname&quot;: tunames }, 
 //     function (data,status) {
@@ -390,8 +600,12 @@
 //         }
 //     }
 // );
-</code></pre><p>// 4——————————<br>// 通过 HTTP GET 请求载入 JSON 数据。  </p>
-<pre><code>$.getJSON(
+
+
+// 4------------------------------  
+// 通过 HTTP GET 请求载入 JSON 数据。  
+
+$.getJSON(
     &quot;http://10.2.1.14:9000/screenlog/&quot;,
     function(data){//data是JSON格式的响应数据
       console.log(data);
@@ -1101,7 +1315,7 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
