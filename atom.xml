@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-02T14:36:57.393Z</updated>
+  <updated>2017-03-24T06:47:37.438Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,165 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown简介</title>
+    <link href="http://yoursite.com/2017/03/23/Markdown%E2%80%94note/"/>
+    <id>http://yoursite.com/2017/03/23/Markdown—note/</id>
+    <published>2017-03-23T09:57:15.919Z</published>
+    <updated>2017-03-24T06:47:37.438Z</updated>
+    
+    <content type="html"><![CDATA[<p>###简介<br>markdown是标记语言，通过标记语法使普通文本具有一定格式。</p>
+<p>具有衍生版本（eg：表格、脚本、内嵌HTML），它们能让markdown转换成更多的格式，例如：LaTeX、Docbook</p>
+<p>markdown中增强版中比较有名的是Markdown Extra、MultiMarkdown、Maruku等。这些衍生版本要么基于工具，eg：Pandoc；要么基于GitHub和Wikipedia，在语法上基本兼容。</p>
+<p>###markdown编辑器推荐:</p>
+<p>（1）在线版：  </p>
+<p>dillinger（来自国外、不够稳定）——支持md、html、pdf文件导出<br>StackEdit——对中文支持不好<br>MaHua——小众软件推荐、界面有点简陋<br>简书（博客平台）——需要注册帐号后编辑、每几秒钟便会自动存入一个备份、直接从本地拖入照片生成链接<br>马克飞象——付费软件</p>
+<p>#####windows： </p>
+<p>MarkdownPad——左右栏分割，可以实时看到HTML格式的Markdown文档<br>MarkPad——开源的<br>Smark——开源软件<br>Miu——模仿mou、小众推荐、官网无法打开 百度云下载、界面美观、功能不成熟</p>
+<p>#####OSX（Mac）：  </p>
+<p>Mou——Mac下杰出的编辑器、提供语法高亮、在线预览、同步滚动、全屏模式、自动匹配、允许自定义主题、支持CSS HTML PDF导出<br>MacDown——开源且免费<br>Ulysses——付费的、支持OSX、iPad、堪称佼佼者<br>iA Writer——未优化中文显示<br>MWeb——专业、UI漂亮、主题可选、支持发布到wp、blogger、tumblr等多个博客  </p>
+<p>#####跨平台：  </p>
+<p>Cmd Markdown——工具和博客平台兼顾的产品<br>小书匠编辑器——全平台覆盖<br>FarBox——免费、在本地编辑后自动同步到个人博客<br>Sublime Text 2——付费（会时不时跳出注册提醒）、界面简约大方、定位专业、需要安装插件才可以编辑markdown<br>Atom——github出的编辑器、功能强大、可以编写代码还可以编辑markdown、并且支持markdown预览（按ctrl+shift+m）<br>Retext——用python开发的、跨平台、支持导出PDF、ODT和HTML以及纯文本，支持即时预览、网页生成、语法高亮、全屏模式、可导出文件到google docs等。</p>
+<p>#段落<br>第一段</p>
+<p>第二段：要跟第一段之间隔一个空行，才会形成第二段    这样在前面加入空格，只会解析为一个空格（后有两个空格）<br>但是像这样，上一段话后有两个空格，并且后面文字换行写，则会解析为换行</p>
+<p>#粗体 斜体<br><em>这是斜体</em>  <em>这也是斜体</em></p>
+<p><strong>这是粗体</strong></p>
+<p><strong><em>这是粗体加斜体</em></strong></p>
+<p>#删除线<br><del>删除线</del></p>
+<p>该MarkdownPad不支持删除线，它也不是经典markdown中的要素</p>
+<p>#标题  （6级标题，可以省略后面的）<br><strong>可以选择性地「闭合」标题，在行尾加上 #，纯粹只是美观用的。</strong><br><strong>行尾的 # 数量也不用和开头一样（行首的井字符数量决定标题的阶数）</strong></p>
+<p>######这是H6</p>
+<p>#####这是H5</p>
+<p>####这是H4</p>
+<p>###这是H3</p>
+<p>##这是H2</p>
+<p>#这是H1</p>
+<p><strong>H1和H2也可以采用：文本下方添加底线。（底线的长短不要求）</strong></p>
+<h1 id="H1也可以这样"><a href="#H1也可以这样" class="headerlink" title="H1也可以这样"></a>H1也可以这样</h1><h2 id="H2也可以这样"><a href="#H2也可以这样" class="headerlink" title="H2也可以这样"></a>H2也可以这样</h2><p>#引用</p>
+<blockquote>
+<p>通常在首行加上大于号来添加引用内容</p>
+<blockquote>
+<p>引用可以嵌套引用</p>
+<p>#还可以嵌套其他格式</p>
+</blockquote>
+</blockquote>
+<p>#列表<br><strong>无序列表：用+或者-或者星号来写无序列表，注意这些符号后要加空格</strong></p>
+<ul>
+<li>111</li>
+<li>222</li>
+<li>333</li>
+</ul>
+<hr>
+<ul>
+<li>aaa</li>
+<li>bbb</li>
+<li>ccc</li>
+</ul>
+<hr>
+<ul>
+<li>qqq</li>
+<li>www</li>
+<li>eee</li>
+</ul>
+<p><strong>有序列表：用数字接着一个英文句点,英文句点后要有空格</strong></p>
+<p><strong>并且列表前面的数字是几，并不会影响显示。比如：以下两种显示相同</strong></p>
+<ol>
+<li>ppppppp</li>
+<li>ooooooo</li>
+<li>iiiiiii</li>
+</ol>
+<hr>
+<ol>
+<li>oippop</li>
+<li>uoipkinl</li>
+<li>hojojoko</li>
+</ol>
+<p>#内联代码???<br><strong>用单引号标记内联代码，会解析成html标签。这样，代码中的&amp; &lt; &gt;符号都会自动转义</strong></p>
+<p>‘function fn(){<br>    var a = ‘7’;<br>    if(i&gt;’5’){<br>        return true;<br>    }<br>}’</p>
+<p>#代码区域（两种方式）???<br><strong>第一种方式：在代码首行空4个空格</strong></p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;HTML代码&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><strong>第二种方式：github的风格——代码段的前后都用三个单引号独占一行来标记。目前主流编辑器都支持这种风格</strong></p>
+<p><strong>github格式只能一行显示？？</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;  </div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;title&gt;HTML标题&lt;/title&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;body&gt;HTML内容&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>#分隔线<br><strong>用三个以上的星号、减号、底线来建立一个分隔线，独占一行</strong></p>
+<h2 id=""><a href="#" class="headerlink" title="*"></a><em>*</em></h2><hr>
+<p><strong>可以在三个以上的星号、减号、底线里添加任意的空格</strong></p>
+<hr>
+<hr>
+<hr>
+<p>#链接<br><strong>行内式</strong></p>
+<p><a href="http://www.baidu.com" target="_blank" rel="external">这是百度链接</a></p>
+<p><a href="http://www.baidu.com" title="百度title" target="_blank" rel="external">这是一个带着title的百度链接</a></p>
+<p>会被解释为<br><a href="http://example.com/" target="_blank" rel="external">an example</a><br><a href="http://example.com/" title="Optional Title" target="_blank" rel="external">an example</a></p>
+<p><strong>非行内式（两句的顺序不限制）</strong></p>
+<p><a href="http://www.baidu.com" title="百度title" target="_blank" rel="external">百度链接</a></p>
+<p>#图像<br><strong>行内式</strong></p>
+<p><img src="http://www.fqxyi.com/images/Blog/avatar.jpg" alt="图像alt内容"><br><img src="http://www.fqxyi.com/images/Blog/avatar.jpg" alt="图像alt内容" title="图像title"></p>
+<p><strong>非行内式</strong><br>同上</p>
+<p>#自动链接</p>
+<p><strong>如果链接的地址和名称一样的时候，可以简写</strong></p>
+<p><a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a></p>
+<p><strong>相当于下面写法</strong></p>
+<p><a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a></p>
+<p>#转义<br><strong>以下字符，要在前面插入反斜杠\，才能将字符原样输出</strong></p>
+<p>\   反斜线</p>
+<p>`   反引号</p>
+<p>*   星号</p>
+<p>_   底线</p>
+<p>{}  花括号</p>
+<p>[]  方括号</p>
+<p>()  括弧</p>
+<p>#   井字号</p>
+<p>+   加号</p>
+<p>-   减号</p>
+<p>.   英文句点</p>
+<p>!   惊叹号</p>
+<p>#表格???<br><strong>表格是github风格独有的语法</strong></p>
+<p><strong>第一行的表格头部可以没有，但是第二行必须有。第二行的冒号代表居左居中还是居右；不加冒号，默认居左</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">item</th>
+<th style="text-align:right">value</th>
+<th style="text-align:center">qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">a</td>
+<td style="text-align:right">1</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:left">b</td>
+<td style="text-align:right">2</td>
+<td style="text-align:center">6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>或者用html标签来构造表格</strong></p>
+<table><br><thead><br><tr><br><th align="left">Item</th><br><th align="right">Value</th><br><th align="center">Qty</th><br></tr><br></thead><br><tbody><tr><br><td align="left">Computer</td><br><td align="right">$1600</td><br><td align="center">5</td><br></tr><br><tr><br><td align="left">Phone</td><br><td align="right">$12</td><br><td align="center">12</td><br></tr><br><tr><br><td align="left">Pipe</td><br><td align="right">$1</td><br><td align="center">234</td><br></tr><br></tbody></table>
+
+
+<p>#html代码</p>
+<p><strong>当html代码前面没有四个空格，则会解析html代码；若有4个空格，则不解析代码，会直接显示代码</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;###简介&lt;br&gt;markdown是标记语言，通过标记语法使普通文本具有一定格式。&lt;/p&gt;
+&lt;p&gt;具有衍生版本（eg：表格、脚本、内嵌HTML），它们能让markdown转换成更多的格式，例如：LaTeX、Docbook&lt;/p&gt;
+&lt;p&gt;markdown中增强版中比较有名的是
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
