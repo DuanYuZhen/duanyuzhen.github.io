@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-24T08:31:16.096Z</updated>
+  <updated>2017-03-24T09:17:16.519Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,9 +16,169 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>面试——中高级JS程序员</title>
+    <link href="http://yoursite.com/2017/03/24/%E9%9D%A2%E8%AF%95_%E4%B8%AD%E9%AB%98%E7%BA%A7JS%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    <id>http://yoursite.com/2017/03/24/面试_中高级JS程序员/</id>
+    <published>2017-03-24T09:05:24.192Z</published>
+    <updated>2017-03-24T09:17:16.519Z</updated>
+    
+    <content type="html"><![CDATA[<p>/*</p>
+<pre><code>1. 考察对JS中同步和异步代码的区别、
+   变量作用域、
+   闭包等概念有正确的理解
+</code></pre><p>*/</p>
+<pre><code>for (var i = 0; i &lt; 5; i++) {
+    setTimeout(function() {
+        console.log(new Date, i);
+    }, 1000);
+}
+console.log(new Date, i);
+// 答案：输出
+// 2017-03-18T00:43:45.873Z 5    
+// 2017-03-18T00:43:46.866Z 5
+// 2017-03-18T00:43:46.868Z 5
+// 2017-03-18T00:43:46.868Z 5
+// 2017-03-18T00:43:46.868Z 5
+// 2017-03-18T00:43:46.868Z 5
+
+// 时间：
+// 第1个5直接输出  是最后那个console.log()输出的。
+// 1秒之后，输出5个5 是for里的console.log()。
+</code></pre><p>/<em><br>    2.追问：期望代码的输出变成：5 -&gt; 0,1,2,3,4<br>            第1个5直接输出<br>            1秒之后，输出5个数：0，1，2，3，4
+</em>/</p>
+<p>/<em><br>    解决：两种合格方式、一种不合格方式
+</em>/</p>
+<pre><code>// （1）闭包
+for (var i = 0; i &lt; 5; i++) {
+    (function(j) {  // j = i
+        setTimeout(function() {
+            console.log(new Date, j);
+        }, 1000);
+    })(i);
+}
+console.log(new Date, i);
+
+
+// （2）利用 JS 中基本类型（Primitive Type）的参数传递是按值传递（Pass by Value）的特征
+var output = function (i) {
+    setTimeout(function() {
+        console.log(new Date, i);
+    }, 1000);
+};
+for (var i = 0; i &lt; 5; i++) {
+    output(i);  // 这里传过去的 i 值被复制了
+}
+console.log(new Date, i);
+
+
+// （3）使用 ES6 块级作用域（Block Scope）中的 let 替代了 var
+// 但是：代码在实际运行时会报错，i只存在于循环内部
+for (let i = 0; i &lt; 5; i++) {
+    setTimeout(function() {
+        console.log(new Date, i);
+    }, 1000);
+}
+console.log(new Date, i);
+</code></pre><p>/<em><br>    3.追问：期望代码的输出变成 0 -&gt; 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5
+</em>/</p>
+<p>// 熟悉和掌握异步操作的流程控制是成为合格开发者的基本功</p>
+<p>/<em><br>    解决：
+</em>/</p>
+<pre><code>// （1）粗暴有效的方法，但不能加分
+// 面试官真正想考察的是候选人是否具备某种能力和素质，因为在现代的前端开发中，处理异步的代码随处可见，熟悉和掌握异步操作的流程控制是成为合格开发者的基本功
+for (var i = 0; i &lt; 5; i++) {
+    (function(j) {
+        setTimeout(function() {
+            console.log(new Date, j);
+        }, 1000 * j);  // 这里修改 0~4 的定时器时间
+    })(i);
+}
+setTimeout(function() { // 这里增加定时器，超时设置为 5 秒
+    console.log(new Date, i);
+}, 1000 * i);
+
+
+// （2）ES6
+//--------给出基于 Promise 的解决方案，Promise 是 ES6 中的新特性
+const tasks = [];
+for (var i = 0; i &lt; 5; i++) {   // 这里 i 的声明不能改成 let，如果要改该怎么做？
+    ((j) =&gt; {
+        tasks.push(new Promise((resolve) =&gt; {
+            setTimeout(() =&gt; {
+                console.log(new Date, j);
+                resolve();  // 这里一定要 resolve，否则代码不会按预期 work
+            }, 1000 * j);   // 定时器的超时时间逐步增加
+        }));
+    })(i);
+}
+
+Promise.all(tasks).then(() =&gt; {
+    setTimeout(() =&gt; {
+        console.log(new Date, i);
+    }, 1000);   // 注意这里只需要把超时设置为 1 秒
+});
+
+
+//-------而代码要更简捷，代码阅读时的颗粒度更小，模块化更好
+const tasks = []; // 这里存放异步操作的 Promise
+const output = (i) =&gt; new Promise((resolve) =&gt; {
+    setTimeout(() =&gt; {
+        console.log(new Date, i);
+        resolve();
+    }, 1000 * i);
+});
+
+// 生成全部的异步操作
+for (var i = 0; i &lt; 5; i++) {
+    tasks.push(output(i));
+}
+
+// 异步操作完成之后，输出最后的 i
+Promise.all(tasks).then(() =&gt; {
+    setTimeout(() =&gt; {
+        console.log(new Date, i);
+    }, 1000);
+});
+
+// （3）ES7
+// 使用 ES7 中的 async await 特性来让这段代码变的更简洁
+// 模拟其他语言中的 sleep，实际上可以是任何异步操作
+const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
+    setTimeout(resolve, timeountMS);
+});
+
+(async () =&gt; {  // 声明即执行的 async 函数表达式
+    for (var i = 0; i &lt; 5; i++) {
+        await sleep(1000);
+        console.log(new Date, i);
+    }
+
+    await sleep(1000);
+    console.log(new Date, i);
+})();
+</code></pre><p>/<em><br>多数面试官在决定聘用某个候选人之前还需要考察另外一项重要能力，即技术自驱力。<br>直白的说就是：像有内部的马达在驱动他，用漂亮的方式解决工程领域的问题，不断的跟随业务和技术变得越来越牛逼<br>对于前端工程师的成长期许：扎实的语言基础、与时俱进的能力、强大技术自驱力。
+</em>/<br></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;/*&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. 考察对JS中同步和异步代码的区别、
+   变量作用域、
+   闭包等概念有正确的理解
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;*/&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for (var i = 0; i &amp;lt; 5; i++) {
+    se
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Markdown简介</title>
-    <link href="http://yoursite.com/2017/03/23/Markdown%E2%80%94note/"/>
-    <id>http://yoursite.com/2017/03/23/Markdown—note/</id>
+    <link href="http://yoursite.com/2017/03/23/Markdown_Note/"/>
+    <id>http://yoursite.com/2017/03/23/Markdown_Note/</id>
     <published>2017-03-23T09:57:15.919Z</published>
     <updated>2017-03-24T08:31:16.096Z</updated>
     

@@ -280,7 +280,256 @@
             
               
                 
-                <a class="post-title-link" href="/2017/03/23/Markdown—note/" itemprop="url">
+                <a class="post-title-link" href="/2017/03/24/面试_中高级JS程序员/" itemprop="url">
+                  面试——中高级JS程序员
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-24T17:05:24+08:00" content="2017-03-24">
+              2017-03-24
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/24/面试_中高级JS程序员/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/24/面试_中高级JS程序员/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+
+          
+          
+             <span id="/2017/03/24/面试_中高级JS程序员/" class="leancloud_visitors" data-flag-title="面试——中高级JS程序员">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>/*</p>
+<pre><code>1. 考察对JS中同步和异步代码的区别、
+   变量作用域、
+   闭包等概念有正确的理解
+</code></pre><p>*/</p>
+<pre><code>for (var i = 0; i &lt; 5; i++) {
+    setTimeout(function() {
+        console.log(new Date, i);
+    }, 1000);
+}
+console.log(new Date, i);
+// 答案：输出
+// 2017-03-18T00:43:45.873Z 5    
+// 2017-03-18T00:43:46.866Z 5
+// 2017-03-18T00:43:46.868Z 5
+// 2017-03-18T00:43:46.868Z 5
+// 2017-03-18T00:43:46.868Z 5
+// 2017-03-18T00:43:46.868Z 5
+
+// 时间：
+// 第1个5直接输出  是最后那个console.log()输出的。
+// 1秒之后，输出5个5 是for里的console.log()。
+</code></pre><p>/<em><br>    2.追问：期望代码的输出变成：5 -&gt; 0,1,2,3,4<br>            第1个5直接输出<br>            1秒之后，输出5个数：0，1，2，3，4
+</em>/</p>
+<p>/<em><br>    解决：两种合格方式、一种不合格方式
+</em>/</p>
+<pre><code>// （1）闭包
+for (var i = 0; i &lt; 5; i++) {
+    (function(j) {  // j = i
+        setTimeout(function() {
+            console.log(new Date, j);
+        }, 1000);
+    })(i);
+}
+console.log(new Date, i);
+
+
+// （2）利用 JS 中基本类型（Primitive Type）的参数传递是按值传递（Pass by Value）的特征
+var output = function (i) {
+    setTimeout(function() {
+        console.log(new Date, i);
+    }, 1000);
+};
+for (var i = 0; i &lt; 5; i++) {
+    output(i);  // 这里传过去的 i 值被复制了
+}
+console.log(new Date, i);
+
+
+// （3）使用 ES6 块级作用域（Block Scope）中的 let 替代了 var
+// 但是：代码在实际运行时会报错，i只存在于循环内部
+for (let i = 0; i &lt; 5; i++) {
+    setTimeout(function() {
+        console.log(new Date, i);
+    }, 1000);
+}
+console.log(new Date, i);
+</code></pre><p>/<em><br>    3.追问：期望代码的输出变成 0 -&gt; 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5
+</em>/</p>
+<p>// 熟悉和掌握异步操作的流程控制是成为合格开发者的基本功</p>
+<p>/<em><br>    解决：
+</em>/</p>
+<pre><code>// （1）粗暴有效的方法，但不能加分
+// 面试官真正想考察的是候选人是否具备某种能力和素质，因为在现代的前端开发中，处理异步的代码随处可见，熟悉和掌握异步操作的流程控制是成为合格开发者的基本功
+for (var i = 0; i &lt; 5; i++) {
+    (function(j) {
+        setTimeout(function() {
+            console.log(new Date, j);
+        }, 1000 * j);  // 这里修改 0~4 的定时器时间
+    })(i);
+}
+setTimeout(function() { // 这里增加定时器，超时设置为 5 秒
+    console.log(new Date, i);
+}, 1000 * i);
+
+
+// （2）ES6
+//--------给出基于 Promise 的解决方案，Promise 是 ES6 中的新特性
+const tasks = [];
+for (var i = 0; i &lt; 5; i++) {   // 这里 i 的声明不能改成 let，如果要改该怎么做？
+    ((j) =&gt; {
+        tasks.push(new Promise((resolve) =&gt; {
+            setTimeout(() =&gt; {
+                console.log(new Date, j);
+                resolve();  // 这里一定要 resolve，否则代码不会按预期 work
+            }, 1000 * j);   // 定时器的超时时间逐步增加
+        }));
+    })(i);
+}
+
+Promise.all(tasks).then(() =&gt; {
+    setTimeout(() =&gt; {
+        console.log(new Date, i);
+    }, 1000);   // 注意这里只需要把超时设置为 1 秒
+});
+
+
+//-------而代码要更简捷，代码阅读时的颗粒度更小，模块化更好
+const tasks = []; // 这里存放异步操作的 Promise
+const output = (i) =&gt; new Promise((resolve) =&gt; {
+    setTimeout(() =&gt; {
+        console.log(new Date, i);
+        resolve();
+    }, 1000 * i);
+});
+
+// 生成全部的异步操作
+for (var i = 0; i &lt; 5; i++) {
+    tasks.push(output(i));
+}
+
+// 异步操作完成之后，输出最后的 i
+Promise.all(tasks).then(() =&gt; {
+    setTimeout(() =&gt; {
+        console.log(new Date, i);
+    }, 1000);
+});
+
+// （3）ES7
+// 使用 ES7 中的 async await 特性来让这段代码变的更简洁
+// 模拟其他语言中的 sleep，实际上可以是任何异步操作
+const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
+    setTimeout(resolve, timeountMS);
+});
+
+(async () =&gt; {  // 声明即执行的 async 函数表达式
+    for (var i = 0; i &lt; 5; i++) {
+        await sleep(1000);
+        console.log(new Date, i);
+    }
+
+    await sleep(1000);
+    console.log(new Date, i);
+})();
+</code></pre><p>/<em><br>多数面试官在决定聘用某个候选人之前还需要考察另外一项重要能力，即技术自驱力。<br>直白的说就是：像有内部的马达在驱动他，用漂亮的方式解决工程领域的问题，不断的跟随业务和技术变得越来越牛逼<br>对于前端工程师的成长期许：扎实的语言基础、与时俱进的能力、强大技术自驱力。
+</em>/<br></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+       <!-- render方法第二个参数is_index为是否为首页 -->
+       <!-- 第三个参数is_pv为我们刚才设置的是否显示计数 -->
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/23/Markdown_Note/" itemprop="url">
                   Markdown简介
                 </a>
               
@@ -305,8 +554,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/03/23/Markdown—note/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/23/Markdown—note/" itemprop="commentsCount"></span>
+                <a href="/2017/03/23/Markdown_Note/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/23/Markdown_Note/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -318,7 +567,7 @@
 
           
           
-             <span id="/2017/03/23/Markdown—note/" class="leancloud_visitors" data-flag-title="Markdown简介">
+             <span id="/2017/03/23/Markdown_Note/" class="leancloud_visitors" data-flag-title="Markdown简介">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -683,7 +932,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
