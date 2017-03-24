@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-24T09:17:16.519Z</updated>
+  <updated>2017-03-24T09:29:13.186Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,99 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jQuery中ajax的4种常用请求方式</title>
+    <link href="http://yoursite.com/2017/03/24/jQuery%E4%B8%ADajax%E7%9A%844%E7%A7%8D%E5%B8%B8%E7%94%A8%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
+    <id>http://yoursite.com/2017/03/24/jQuery中ajax的4种常用请求方式/</id>
+    <published>2017-03-24T09:26:47.092Z</published>
+    <updated>2017-03-24T09:29:13.186Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;请求接口的方式&lt;/title&gt;
+    &lt;script src=&quot;jquery-1.9.1.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script&gt;
+
+/*jQuery中ajax的4种常用请求方式：*/
+// 1----------------------------
+// $.ajax()返回其创建的 XMLHttpRequest 对象。
+// $.ajax() 只有一个参数：参数 key/value 对象，包含各配置及回调函数信息。
+// 如果你指定了 dataType 选项，请确保服务器返回正确的 MIME 信息，(如 xml 返回 &quot;text/xml&quot;)
+ // $.ajax({
+ //        type: &quot;post&quot;,
+ //        dataType: &quot;html&quot;,//服务器返回的文本格式
+ //        url: &apos;/Resources/GetList.ashx&apos;,
+ //        data: dataurl,//请求的数据
+ //        success: function (data) {
+ //            if (data != &quot;&quot;) {
+ //                $(&quot;#pager&quot;).pager({ pagenumber: pagenumber, pagecount: data.split(&quot;&quot;)[1], buttonClickCallback: PageClick });                 $(&quot;#anhtml&quot;).html(data.split(&quot;&quot;)[0]);
+
+ //            }
+ //        }
+ //    });
+
+
+
+// 2----------------------------
+// 通过远程 HTTP GET 请求载入信息。
+// 简单的 GET 请求功能以取代复杂$.ajax 请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。
+
+// $.get(
+//     &quot;../saveUser.action&quot;, //请求路径
+//     { name: &quot;John&quot;, time: &quot;2pm&quot; },//请求数据
+//     function(data,status){//响应的数据、响应的状态
+//         alert(&quot;Data Loaded: &quot; + data);//数据处理
+//     }
+// ); 
+
+
+
+
+// 3.-----------------------------
+// 通过远程 HTTP POST 请求载入信息。
+// 简单的 POST 请求功能以取代复杂 $.ajax 。请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。
+//  $.post(
+//     &quot;/Resources/addfriend.ashx&quot;, 
+//     { &quot;fid&quot;: fids, &quot;fname&quot;: fnames, &quot;tuid&quot;: tuids, &quot;tuname&quot;: tunames }, 
+//     function (data,status) {
+//         if (data == &quot;ok&quot;) {
+//             alert(&quot;添加成功！&quot;);
+//         }
+//     }
+// );
+
+
+
+// 4------------------------------
+// 通过 HTTP GET 请求载入 JSON 数据。
+$.getJSON(
+    &quot;http://10.2.1.14:9000/screenlog/&quot;,
+    function(data){//data是JSON格式的响应数据
+      console.log(data);
+    }
+);
+&lt;/script&gt;
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;请求接口的方式&amp;lt;/title&amp;gt;
+ 
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>面试——中高级JS程序员</title>

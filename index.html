@@ -280,6 +280,190 @@
             
               
                 
+                <a class="post-title-link" href="/2017/03/24/jQuery中ajax的4种常用请求方式/" itemprop="url">
+                  jQuery中ajax的4种常用请求方式
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-24T17:26:47+08:00" content="2017-03-24">
+              2017-03-24
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/24/jQuery中ajax的4种常用请求方式/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/24/jQuery中ajax的4种常用请求方式/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+
+          
+          
+             <span id="/2017/03/24/jQuery中ajax的4种常用请求方式/" class="leancloud_visitors" data-flag-title="jQuery中ajax的4种常用请求方式">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;请求接口的方式&lt;/title&gt;
+    &lt;script src=&quot;jquery-1.9.1.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script&gt;
+
+/*jQuery中ajax的4种常用请求方式：*/
+// 1----------------------------
+// $.ajax()返回其创建的 XMLHttpRequest 对象。
+// $.ajax() 只有一个参数：参数 key/value 对象，包含各配置及回调函数信息。
+// 如果你指定了 dataType 选项，请确保服务器返回正确的 MIME 信息，(如 xml 返回 &quot;text/xml&quot;)
+ // $.ajax({
+ //        type: &quot;post&quot;,
+ //        dataType: &quot;html&quot;,//服务器返回的文本格式
+ //        url: &apos;/Resources/GetList.ashx&apos;,
+ //        data: dataurl,//请求的数据
+ //        success: function (data) {
+ //            if (data != &quot;&quot;) {
+ //                $(&quot;#pager&quot;).pager({ pagenumber: pagenumber, pagecount: data.split(&quot;&quot;)[1], buttonClickCallback: PageClick });                 $(&quot;#anhtml&quot;).html(data.split(&quot;&quot;)[0]);
+
+ //            }
+ //        }
+ //    });
+
+
+
+// 2----------------------------
+// 通过远程 HTTP GET 请求载入信息。
+// 简单的 GET 请求功能以取代复杂$.ajax 请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。
+
+// $.get(
+//     &quot;../saveUser.action&quot;, //请求路径
+//     { name: &quot;John&quot;, time: &quot;2pm&quot; },//请求数据
+//     function(data,status){//响应的数据、响应的状态
+//         alert(&quot;Data Loaded: &quot; + data);//数据处理
+//     }
+// ); 
+
+
+
+
+// 3.-----------------------------
+// 通过远程 HTTP POST 请求载入信息。
+// 简单的 POST 请求功能以取代复杂 $.ajax 。请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。
+//  $.post(
+//     &quot;/Resources/addfriend.ashx&quot;, 
+//     { &quot;fid&quot;: fids, &quot;fname&quot;: fnames, &quot;tuid&quot;: tuids, &quot;tuname&quot;: tunames }, 
+//     function (data,status) {
+//         if (data == &quot;ok&quot;) {
+//             alert(&quot;添加成功！&quot;);
+//         }
+//     }
+// );
+
+
+
+// 4------------------------------
+// 通过 HTTP GET 请求载入 JSON 数据。
+$.getJSON(
+    &quot;http://10.2.1.14:9000/screenlog/&quot;,
+    function(data){//data是JSON格式的响应数据
+      console.log(data);
+    }
+);
+&lt;/script&gt;
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+       <!-- render方法第二个参数is_index为是否为首页 -->
+       <!-- 第三个参数is_pv为我们刚才设置的是否显示计数 -->
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/03/24/面试_中高级JS程序员/" itemprop="url">
                   面试——中高级JS程序员
                 </a>
@@ -932,7 +1116,7 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
