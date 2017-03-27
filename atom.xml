@@ -59,105 +59,29 @@
     <link href="http://yoursite.com/2017/03/24/%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98_1/"/>
     <id>http://yoursite.com/2017/03/24/跨域问题_1/</id>
     <published>2017-03-24T06:27:15.000Z</published>
-    <updated>2017-03-27T06:41:02.303Z</updated>
+    <updated>2017-03-27T07:03:15.511Z</updated>
     
-    <content type="html"><![CDATA[<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;跨域问题&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;!-- 域：(Domain)
- 1.顶级域名
-    （1）国家顶级域名：
-        200多个国家都按照ISO3166国家代码分配了顶级域名，
-        例如中国是.cn，美国是.us，日本是.jp等；
-    （2）国际顶级域名：
-        工商企业的 .Com，表示网络提供商的.net，表示非盈利组织的.org。
-</code></pre><a id="more"></a>    
-<pre><code>    注意：
-        大多数域名争议都发生在com的顶级域名下，因为多数公司上网的目的都是为了赢利。
-        国际组织经过广泛协商，在原来三个国际通用顶级域名的基础上，
-        新增加了7个国际通用顶级域名：
-            .firm（公司企业）、
-            .store（销售公司或企业）、
-            .Web（突出WWW活动的单位）、
-            .arts（突出文化、娱乐活动的单位）、
-            .rec (突出消遣、娱乐活动的单位)、
-            .info (提供信息服务的单位)、
-            .nom(个人)，
-        并在世界范围内选择新的注册机构来受理域名注册申请。
-
-    （3）我国的顶级域名
-    我国在国际互联网络信息中心(Inter NIC)正式注册并运行的顶级域名是.cn,这也是我国的一级域名。
- 2.多级域名
-    *凡顶级域名前加前缀的都是该顶级域名的子域名，而子域名根据技术的多少分为二级子域名，三级子域名以及多级子域名。
-
-    （1）二级域名
-      在国际顶级域名下，它是指域名注册人的网上名称，
-        例如 &quot;.ibm&quot;，&quot;.yahoo&quot;，&quot;.microsoft&quot;等；
-
-      在国家顶级域名下，它是表示注册企业类别的符号，
-        例如&quot;.com&quot;，&quot;.edu&quot;，&quot;.gov&quot;，&quot;.net&quot;等。
-
-     (2)我国的二级域名
-     在顶级域名之下，我国的二级域名又分为类别域名和行政区域名两类。
-     *类别域名共6个，包括:
-          用于科研机构的.ac；
-          用于工商金融企业的.com；用于教育机构的.edu；
-          用于政府部门的.gov；
-          用于互联网络信息中心和运行中心的.net；
-          用于非盈利组织的.org。
-     *行政区域名有34个，分别对应于我国各省、自治区和直辖市。
-
-     (3)三级域名
-     三级域名用字母（a～z）、数字（0～9）和连接符（－）组成，
-     各级域名之间用实点（.）连接，三级域名的长度不能超过20个字符。 
-     如无特殊原因，采用申请人的英文名(或者缩写)或者汉语拼音名(或者缩写)作为三级域名，以保持域名的清晰性和简洁性。
- 跨域：
-    1.解释：javascript出于安全方面的考虑，不允许跨域调用其他页面的对象
-            由于JavaScript同源策略的限制，出现跨域问题
-    2.跨域的出现与否：
-        （1）没有跨域问题：同一域名，不同文件夹
-        （2）跨域：
-                —— 同一域名，端口不同
-                —— 同一域名，协议不同
-                —— 域名和域名对应ip
-                —— 主域相同，子域不同
-                    http://www.a.com/a.js
-                    http://script.a.com/b.js
-                —— 同一域名，不同二级域名（同上）——cookie这种情况下也不允许访问
-                    http://www.a.com/a.js
-                    http://a.com/b.js
-                —— 不同域名
-        （3）注意：
-        如果是协议、端口造成跨域问题，前台是无能为力的
-        在跨域问题上，域仅仅是通过“URL的首部”来识别而不会去尝试判断相同的ip地址对应着两个域或两个域是否在同一个ip上。
-        “URL的首部”指window.location.protocol(协议) +window.location.host(域名:包括ip和端口)
-            即：Domains, protocols and ports must match”
- --&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="域-Domain"><a href="#域-Domain" class="headerlink" title="域(Domain)"></a>域(Domain)</h2><h3 id="顶级域名"><a href="#顶级域名" class="headerlink" title="顶级域名"></a>顶级域名</h3><p>1.国家顶级域名：<br>200多个国家都按照ISO3166国家代码分配了顶级域名，<br>例如中国是.cn，美国是.us，日本是.jp等；<br>2.国际顶级域名：<br>工商企业的 .Com，表示网络提供商的.net，表示非盈利组织的.org。</p>
+<a id="more"></a>
+<p>注意：<br>大多数域名争议都发生在com的顶级域名下，因为多数公司上网的目的都是为了赢利。<br>国际组织经过广泛协商，在原来三个国际通用顶级域名的基础上，<br>新增加了7个国际通用顶级域名：<br>.firm（公司企业）、<br>.store（销售公司或企业）、<br>.Web（突出WWW活动的单位）、<br>.arts（突出文化、娱乐活动的单位）、<br>.rec (突出消遣、娱乐活动的单位)、<br>.info (提供信息服务的单位)、<br>.nom(个人)，<br>并在世界范围内选择新的注册机构来受理域名注册申请。</p>
+<p>3.我国的顶级域名<br>我国在国际互联网络信息中心(Inter NIC)正式注册并运行的顶级域名是.cn,这也是我国的一级域名。</p>
+<h3 id="多级域名"><a href="#多级域名" class="headerlink" title="多级域名"></a>多级域名</h3><p>*凡顶级域名前加前缀的都是该顶级域名的子域名，而子域名根据技术的多少分为二级子域名，三级子域名以及多级子域名。</p>
+<ol>
+<li><p>二级域名<br>在国际顶级域名下，它是指域名注册人的网上名称，<br>例如 “.ibm”，”.yahoo”，”.microsoft”等；<br>在国家顶级域名下，它是表示注册企业类别的符号，<br>例如”.com”，”.edu”，”.gov”，”.net”等。</p>
+</li>
+<li><p>我国的二级域名<br>在顶级域名之下，我国的二级域名又分为类别域名和行政区域名两类。<br><em>类别域名共6个，包括:<br>用于科研机构的.ac；<br>用于工商金融企业的.com；<br>用于教育机构的.edu；<br>用于政府部门的.gov；<br>用于互联网络信息中心和运行中心的.net；<br>用于非盈利组织的.org。  
+</em>行政区域名有34个，分别对应于我国各省、自治区和直辖市。</p>
+</li>
+<li><p>三级域名<br>三级域名用字母（a～z）、数字（0～9）和连接符（－）组成，<br>各级域名之间用实点（.）连接，三级域名的长度不能超过20个字符。<br>如无特殊原因，采用申请人的英文名(或者缩写)或者汉语拼音名(或者缩写)作为三级域名，以保持域名的清晰性和简洁性。</p>
+<p><strong>跨域：</strong><br>1.解释：<br>javascript出于安全方面的考虑，不允许跨域调用其他页面的对象<br>由于JavaScript同源策略的限制，出现跨域问题  </p>
+</li>
+</ol>
+<p>2.跨域的出现与否：<br>（1）没有跨域问题：同一域名，不同文件夹<br>（2）跨域：<br>—— 同一域名，端口不同<br>—— 同一域名，协议不同<br>—— 域名和域名对应ip<br>—— 主域相同，子域不同<br><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="http://script.a.com/b.js" target="_blank" rel="external">http://script.a.com/b.js</a><br>—— 同一域名，不同二级域名（同上）<br>——cookie这种情况下也不允许访问<br><a href="http://www.a.com/a.js" target="_blank" rel="external">http://www.a.com/a.js</a><br><a href="http://a.com/b.js" target="_blank" rel="external">http://a.com/b.js</a><br>—— 不同域名<br>（3）注意：<br>如果是协议、端口造成跨域问题，前台是无能为力的<br>在跨域问题上，域仅仅是通过“URL的首部”来识别而不会去尝试判断相同的ip地址对应着两个域或两个域是否在同一个ip上。<br>“URL的首部”指window.location.protocol(协议) +window.location.host(域名:包括ip和端口)<br>即：Domains, protocols and ports must match”  </p>
+]]></content>
     
     <summary type="html">
     
-      &lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;跨域问题&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;!-- 域：(Domain)
- 1.顶级域名
-    （1）国家顶级域名：
-        200多个国家都按照ISO3166国家代码分配了顶级域名，
-        例如中国是.cn，美国是.us，日本是.jp等；
-    （2）国际顶级域名：
-        工商企业的 .Com，表示网络提供商的.net，表示非盈利组织的.org。
-&lt;/code&gt;&lt;/pre&gt;
+      &lt;h2 id=&quot;域-Domain&quot;&gt;&lt;a href=&quot;#域-Domain&quot; class=&quot;headerlink&quot; title=&quot;域(Domain)&quot;&gt;&lt;/a&gt;域(Domain)&lt;/h2&gt;&lt;h3 id=&quot;顶级域名&quot;&gt;&lt;a href=&quot;#顶级域名&quot; class=&quot;headerlink&quot; title=&quot;顶级域名&quot;&gt;&lt;/a&gt;顶级域名&lt;/h3&gt;&lt;p&gt;1.国家顶级域名：&lt;br&gt;200多个国家都按照ISO3166国家代码分配了顶级域名，&lt;br&gt;例如中国是.cn，美国是.us，日本是.jp等；&lt;br&gt;2.国际顶级域名：&lt;br&gt;工商企业的 .Com，表示网络提供商的.net，表示非盈利组织的.org。&lt;/p&gt;
     
     </summary>
     
@@ -613,9 +537,10 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
     <link href="http://yoursite.com/2016/10/02/Hello%20World/"/>
     <id>http://yoursite.com/2016/10/02/Hello World/</id>
     <published>2016-10-02T14:36:57.393Z</published>
-    <updated>2016-10-02T14:36:57.393Z</updated>
+    <updated>2017-03-27T06:49:40.159Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<a id="more"></a>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
@@ -628,7 +553,7 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
