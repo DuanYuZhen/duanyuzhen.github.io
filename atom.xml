@@ -95,21 +95,9 @@
     <link href="http://yoursite.com/2017/03/24/jQuery%E4%B8%ADajax%E7%9A%844%E7%A7%8D%E5%B8%B8%E7%94%A8%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
     <id>http://yoursite.com/2017/03/24/jQuery中ajax的4种常用请求方式/</id>
     <published>2017-03-24T03:27:15.000Z</published>
-    <updated>2017-03-27T06:41:23.538Z</updated>
+    <updated>2017-03-27T07:05:09.958Z</updated>
     
-    <content type="html"><![CDATA[<pre><code>&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;请求接口的方式&lt;/title&gt;
-    &lt;script src=&quot;jquery-1.9.1.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;script&gt;
-
-/*jQuery中ajax的4种常用请求方式：*/
+    <content type="html"><![CDATA[<pre><code>/*jQuery中ajax的4种常用请求方式：*/
 // 1----------------------------  
 // $.ajax()返回其创建的 XMLHttpRequest 对象。  
 // $.ajax() 只有一个参数：参数 key/value 对象，包含各配置及回调函数信息。  
@@ -175,24 +163,11 @@ $.getJSON(
       console.log(data);
     }
 );
-&lt;/script&gt;
 </code></pre>]]></content>
     
     <summary type="html">
     
-      &lt;pre&gt;&lt;code&gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;请求接口的方式&amp;lt;/title&amp;gt;
-    &amp;lt;script src=&amp;quot;jquery-1.9.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&amp;lt;script&amp;gt;
-
-/*jQuery中ajax的4种常用请求方式：*/
+      &lt;pre&gt;&lt;code&gt;/*jQuery中ajax的4种常用请求方式：*/
 // 1----------------------------  
 // $.ajax()返回其创建的 XMLHttpRequest 对象。  
 // $.ajax() 只有一个参数：参数 key/value 对象，包含各配置及回调函数信息。  
