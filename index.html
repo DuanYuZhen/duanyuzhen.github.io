@@ -308,8 +308,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/ShowJoy/" itemprop="url" rel="index">
-                    <span itemprop="name">ShowJoy</span>
+                  <a href="/categories/翻墙/" itemprop="url" rel="index">
+                    <span itemprop="name">翻墙</span>
                   </a>
                 </span>
 
@@ -361,8 +361,6 @@
       
         
           <h2 id="翻墙浏览器"><a href="#翻墙浏览器" class="headerlink" title="翻墙浏览器"></a>翻墙浏览器</h2><p>特点：简单易用，免费产品的稳定性差，无法全局翻墙，只适合临时浏览网页</p>
-<p>1.浏览器插件</p>
-<p>插件平台：google、QQ、360、猎豹、百度等webkit核心的浏览器。</p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2017/03/27/翻墙方法/#more" rel="contents">
               阅读全文 &raquo;
@@ -431,11 +429,30 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-03-24T17:40:46+08:00" content="2017-03-24">
+            <time itemprop="dateCreated" datetime="2017-03-24T14:27:15+08:00" content="2017-03-24">
               2017-03-24
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/跨域问题/" itemprop="url" rel="index">
+                    <span itemprop="name">跨域问题</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -478,8 +495,7 @@
 
       
         
-          
-            <pre><code>&lt;!DOCTYPE html&gt;
+          <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -493,72 +509,12 @@
         例如中国是.cn，美国是.us，日本是.jp等；
     （2）国际顶级域名：
         工商企业的 .Com，表示网络提供商的.net，表示非盈利组织的.org。
-
-    注意：
-        大多数域名争议都发生在com的顶级域名下，因为多数公司上网的目的都是为了赢利。
-        国际组织经过广泛协商，在原来三个国际通用顶级域名的基础上，
-        新增加了7个国际通用顶级域名：
-            .firm（公司企业）、
-            .store（销售公司或企业）、
-            .Web（突出WWW活动的单位）、
-            .arts（突出文化、娱乐活动的单位）、
-            .rec (突出消遣、娱乐活动的单位)、
-            .info (提供信息服务的单位)、
-            .nom(个人)，
-        并在世界范围内选择新的注册机构来受理域名注册申请。
-
-    （3）我国的顶级域名
-    我国在国际互联网络信息中心(Inter NIC)正式注册并运行的顶级域名是.cn,这也是我国的一级域名。
- 2.多级域名
-    *凡顶级域名前加前缀的都是该顶级域名的子域名，而子域名根据技术的多少分为二级子域名，三级子域名以及多级子域名。
-
-    （1）二级域名
-      在国际顶级域名下，它是指域名注册人的网上名称，
-        例如 &quot;.ibm&quot;，&quot;.yahoo&quot;，&quot;.microsoft&quot;等；
-
-      在国家顶级域名下，它是表示注册企业类别的符号，
-        例如&quot;.com&quot;，&quot;.edu&quot;，&quot;.gov&quot;，&quot;.net&quot;等。
-
-     (2)我国的二级域名
-     在顶级域名之下，我国的二级域名又分为类别域名和行政区域名两类。
-     *类别域名共6个，包括:
-          用于科研机构的.ac；
-          用于工商金融企业的.com；用于教育机构的.edu；
-          用于政府部门的.gov；
-          用于互联网络信息中心和运行中心的.net；
-          用于非盈利组织的.org。
-     *行政区域名有34个，分别对应于我国各省、自治区和直辖市。
-
-     (3)三级域名
-     三级域名用字母（a～z）、数字（0～9）和连接符（－）组成，
-     各级域名之间用实点（.）连接，三级域名的长度不能超过20个字符。 
-     如无特殊原因，采用申请人的英文名(或者缩写)或者汉语拼音名(或者缩写)作为三级域名，以保持域名的清晰性和简洁性。
- 跨域：
-    1.解释：javascript出于安全方面的考虑，不允许跨域调用其他页面的对象
-            由于JavaScript同源策略的限制，出现跨域问题
-    2.跨域的出现与否：
-        （1）没有跨域问题：同一域名，不同文件夹
-        （2）跨域：
-                —— 同一域名，端口不同
-                —— 同一域名，协议不同
-                —— 域名和域名对应ip
-                —— 主域相同，子域不同
-                    http://www.a.com/a.js
-                    http://script.a.com/b.js
-                —— 同一域名，不同二级域名（同上）——cookie这种情况下也不允许访问
-                    http://www.a.com/a.js
-                    http://a.com/b.js
-                —— 不同域名
-        （3）注意：
-        如果是协议、端口造成跨域问题，前台是无能为力的
-        在跨域问题上，域仅仅是通过“URL的首部”来识别而不会去尝试判断相同的ip地址对应着两个域或两个域是否在同一个ip上。
-        “URL的首部”指window.location.protocol(协议) +window.location.host(域名:包括ip和端口)
-            即：Domains, protocols and ports must match”
- --&gt;
-&lt;/body&gt;
-&lt;/html&gt;
 </code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/24/跨域问题_1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -622,11 +578,30 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-03-24T17:26:47+08:00" content="2017-03-24">
+            <time itemprop="dateCreated" datetime="2017-03-24T11:27:15+08:00" content="2017-03-24">
               2017-03-24
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端请求方式/" itemprop="url" rel="index">
+                    <span itemprop="name">前端请求方式</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -669,8 +644,7 @@
 
       
         
-          
-            <pre><code>&lt;html lang=&quot;en&quot;&gt;
+          <pre><code>&lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
     &lt;title&gt;请求接口的方式&lt;/title&gt;
@@ -687,70 +661,12 @@
 // $.ajax()返回其创建的 XMLHttpRequest 对象。  
 // $.ajax() 只有一个参数：参数 key/value 对象，包含各配置及回调函数信息。  
 // 如果你指定了 dataType 选项，请确保服务器返回正确的 MIME 信息，(如 xml 返回 &quot;text/xml&quot;)
-
- // $.ajax({
- //        type: &quot;post&quot;,
- //        dataType: &quot;html&quot;,//服务器返回的文本格式
- //        url: &apos;/Resources/GetList.ashx&apos;,
- //        data: dataurl,//请求的数据
- //        success: function (data) {
- //            if (data != &quot;&quot;) {
- //                $(&quot;#pager&quot;).pager({
-                        pagenumber: pagenumber, 
-                        pagecount: data.split(&quot;&quot;)[1], 
-                        buttonClickCallback: PageClick 
-                    });                 
-                   $(&quot;#anhtml&quot;).html(data.split(&quot;&quot;)[0]);
- //            }
- //        }
- //    });
-
-
-
-// 2----------------------------  
-// 通过远程 HTTP GET 请求载入信息。  
-// 简单的 GET 请求功能以取代复杂$.ajax 请求成功时可调用回调函数。
-   如果需要在出错时执行函数，请使用 $.ajax。  
-
-// $.get(
-//     &quot;../saveUser.action&quot;, //请求路径
-//     { name: &quot;John&quot;, time: &quot;2pm&quot; },//请求数据
-//     function(data,status){//响应的数据、响应的状态
-//         alert(&quot;Data Loaded: &quot; + data);//数据处理
-//     }
-// ); 
-
-
-
-
-// 3.-----------------------------  
-// 通过远程 HTTP POST 请求载入信息。  
-// 简单的 POST 请求功能以取代复杂 $.ajax 。
-   请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。  
-
-//  $.post(
-//     &quot;/Resources/addfriend.ashx&quot;, 
-//     { &quot;fid&quot;: fids, &quot;fname&quot;: fnames, &quot;tuid&quot;: tuids, &quot;tuname&quot;: tunames }, 
-//     function (data,status) {
-//         if (data == &quot;ok&quot;) {
-//             alert(&quot;添加成功！&quot;);
-//         }
-//     }
-// );
-
-
-// 4------------------------------  
-// 通过 HTTP GET 请求载入 JSON 数据。  
-
-$.getJSON(
-    &quot;http://10.2.1.14:9000/screenlog/&quot;,
-    function(data){//data是JSON格式的响应数据
-      console.log(data);
-    }
-);
-&lt;/script&gt;
 </code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/24/jQuery中ajax的4种常用请求方式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -814,11 +730,30 @@ $.getJSON(
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-03-24T17:05:24+08:00" content="2017-03-24">
+            <time itemprop="dateCreated" datetime="2017-03-24T09:27:15+08:00" content="2017-03-24">
               2017-03-24
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Javascript面试/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript面试</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -861,145 +796,13 @@ $.getJSON(
 
       
         
-          
-            <p>/*</p>
-<pre><code>1. 考察对JS中同步和异步代码的区别、
-   变量作用域、
-   闭包等概念有正确的理解
-</code></pre><p>*/</p>
-<pre><code>for (var i = 0; i &lt; 5; i++) {
-    setTimeout(function() {
-        console.log(new Date, i);
-    }, 1000);
-}
-console.log(new Date, i);
-// 答案：输出
-// 2017-03-18T00:43:45.873Z 5    
-// 2017-03-18T00:43:46.866Z 5
-// 2017-03-18T00:43:46.868Z 5
-// 2017-03-18T00:43:46.868Z 5
-// 2017-03-18T00:43:46.868Z 5
-// 2017-03-18T00:43:46.868Z 5
-
-// 时间：
-// 第1个5直接输出  是最后那个console.log()输出的。
-// 1秒之后，输出5个5 是for里的console.log()。
-</code></pre><p>/<em><br>    2.追问：期望代码的输出变成：5 -&gt; 0,1,2,3,4<br>            第1个5直接输出<br>            1秒之后，输出5个数：0，1，2，3，4
-</em>/</p>
-<p>/<em><br>    解决：两种合格方式、一种不合格方式
-</em>/</p>
-<pre><code>// （1）闭包
-for (var i = 0; i &lt; 5; i++) {
-    (function(j) {  // j = i
-        setTimeout(function() {
-            console.log(new Date, j);
-        }, 1000);
-    })(i);
-}
-console.log(new Date, i);
-
-
-// （2）利用 JS 中基本类型（Primitive Type）的参数传递是按值传递（Pass by Value）的特征
-var output = function (i) {
-    setTimeout(function() {
-        console.log(new Date, i);
-    }, 1000);
-};
-for (var i = 0; i &lt; 5; i++) {
-    output(i);  // 这里传过去的 i 值被复制了
-}
-console.log(new Date, i);
-
-
-// （3）使用 ES6 块级作用域（Block Scope）中的 let 替代了 var
-// 但是：代码在实际运行时会报错，i只存在于循环内部
-for (let i = 0; i &lt; 5; i++) {
-    setTimeout(function() {
-        console.log(new Date, i);
-    }, 1000);
-}
-console.log(new Date, i);
-</code></pre><p>/<em><br>    3.追问：期望代码的输出变成 0 -&gt; 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5
-</em>/</p>
-<p>// 熟悉和掌握异步操作的流程控制是成为合格开发者的基本功</p>
-<p>/<em><br>    解决：
-</em>/</p>
-<pre><code>// （1）粗暴有效的方法，但不能加分
-// 面试官真正想考察的是候选人是否具备某种能力和素质，因为在现代的前端开发中，处理异步的代码随处可见，熟悉和掌握异步操作的流程控制是成为合格开发者的基本功
-for (var i = 0; i &lt; 5; i++) {
-    (function(j) {
-        setTimeout(function() {
-            console.log(new Date, j);
-        }, 1000 * j);  // 这里修改 0~4 的定时器时间
-    })(i);
-}
-setTimeout(function() { // 这里增加定时器，超时设置为 5 秒
-    console.log(new Date, i);
-}, 1000 * i);
-
-
-// （2）ES6
-//--------给出基于 Promise 的解决方案，Promise 是 ES6 中的新特性
-const tasks = [];
-for (var i = 0; i &lt; 5; i++) {   // 这里 i 的声明不能改成 let，如果要改该怎么做？
-    ((j) =&gt; {
-        tasks.push(new Promise((resolve) =&gt; {
-            setTimeout(() =&gt; {
-                console.log(new Date, j);
-                resolve();  // 这里一定要 resolve，否则代码不会按预期 work
-            }, 1000 * j);   // 定时器的超时时间逐步增加
-        }));
-    })(i);
-}
-
-Promise.all(tasks).then(() =&gt; {
-    setTimeout(() =&gt; {
-        console.log(new Date, i);
-    }, 1000);   // 注意这里只需要把超时设置为 1 秒
-});
-
-
-//-------而代码要更简捷，代码阅读时的颗粒度更小，模块化更好
-const tasks = []; // 这里存放异步操作的 Promise
-const output = (i) =&gt; new Promise((resolve) =&gt; {
-    setTimeout(() =&gt; {
-        console.log(new Date, i);
-        resolve();
-    }, 1000 * i);
-});
-
-// 生成全部的异步操作
-for (var i = 0; i &lt; 5; i++) {
-    tasks.push(output(i));
-}
-
-// 异步操作完成之后，输出最后的 i
-Promise.all(tasks).then(() =&gt; {
-    setTimeout(() =&gt; {
-        console.log(new Date, i);
-    }, 1000);
-});
-
-// （3）ES7
-// 使用 ES7 中的 async await 特性来让这段代码变的更简洁
-// 模拟其他语言中的 sleep，实际上可以是任何异步操作
-const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
-    setTimeout(resolve, timeountMS);
-});
-
-(async () =&gt; {  // 声明即执行的 async 函数表达式
-    for (var i = 0; i &lt; 5; i++) {
-        await sleep(1000);
-        console.log(new Date, i);
-    }
-
-    await sleep(1000);
-    console.log(new Date, i);
-})();
-</code></pre><p>/<em><br>多数面试官在决定聘用某个候选人之前还需要考察另外一项重要能力，即技术自驱力。<br>直白的说就是：像有内部的马达在驱动他，用漂亮的方式解决工程领域的问题，不断的跟随业务和技术变得越来越牛逼<br>对于前端工程师的成长期许：扎实的语言基础、与时俱进的能力、强大技术自驱力。
-</em>/<br></p>
-
-          
+          <p>/<em><br> 1.考察对JS中同步和异步代码的区别、<br>   变量作用域、<br>   闭包等概念有正确的理解
+ </em>/</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/24/面试_中高级JS程序员/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1063,11 +866,30 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-03-23T17:57:15+08:00" content="2017-03-23">
+            <time itemprop="dateCreated" datetime="2017-03-23T10:27:15+08:00" content="2017-03-23">
               2017-03-23
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Markdown标记语言/" itemprop="url" rel="index">
+                    <span itemprop="name">Markdown标记语言</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -1110,159 +932,12 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
 
       
         
-          
-            <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>markdown是标记语言，通过标记语法使普通文本具有一定格式。</p>
-<p>具有衍生版本（eg：表格、脚本、内嵌HTML），它们能让markdown转换成更多的格式，例如：LaTeX、Docbook</p>
-<p>markdown中增强版中比较有名的是Markdown Extra、MultiMarkdown、Maruku等。这些衍生版本要么基于工具，eg：Pandoc；要么基于GitHub和Wikipedia，在语法上基本兼容。</p>
-<h3 id="markdown编辑器推荐"><a href="#markdown编辑器推荐" class="headerlink" title="markdown编辑器推荐"></a>markdown编辑器推荐</h3><h4 id="在线版"><a href="#在线版" class="headerlink" title="在线版"></a>在线版</h4><p>dillinger（来自国外、不够稳定）——支持md、html、pdf文件导出<br>StackEdit——对中文支持不好<br>MaHua——小众软件推荐、界面有点简陋<br>简书（博客平台）——需要注册帐号后编辑、每几秒钟便会自动存入一个备份、直接从本地拖入照片生成链接<br>马克飞象——付费软件</p>
-<h4 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h4><p>MarkdownPad——左右栏分割，可以实时看到HTML格式的Markdown文档<br>MarkPad——开源的<br>Smark——开源软件<br>Miu——模仿mou、小众推荐、官网无法打开 百度云下载、界面美观、功能不成熟</p>
-<h4 id="OSX（Mac）"><a href="#OSX（Mac）" class="headerlink" title="OSX（Mac）"></a>OSX（Mac）</h4><p>Mou——Mac下杰出的编辑器、提供语法高亮、在线预览、同步滚动、全屏模式、自动匹配、允许自定义主题、支持CSS HTML PDF导出<br>MacDown——开源且免费<br>Ulysses——付费的、支持OSX、iPad、堪称佼佼者<br>iA Writer——未优化中文显示<br>MWeb——专业、UI漂亮、主题可选、支持发布到wp、blogger、tumblr等多个博客  </p>
-<h4 id="跨平台"><a href="#跨平台" class="headerlink" title="跨平台"></a>跨平台</h4><p>Cmd Markdown——工具和博客平台兼顾的产品<br>小书匠编辑器——全平台覆盖<br>FarBox——免费、在本地编辑后自动同步到个人博客<br>Sublime Text 2——付费（会时不时跳出注册提醒）、界面简约大方、定位专业、需要安装插件才可以编辑markdown<br>Atom——github出的编辑器、功能强大、可以编写代码还可以编辑markdown、并且支持markdown预览（按ctrl+shift+m）<br>Retext——用python开发的、跨平台、支持导出PDF、ODT和HTML以及纯文本，支持即时预览、网页生成、语法高亮、全屏模式、可导出文件到google docs等。</p>
-<h3 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h3><h4 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h4><p>第一段</p>
-<p>第二段：要跟第一段之间隔一个空行，才会形成第二段    这样在前面加入空格，只会解析为一个空格（后有两个空格）<br>但是像这样，上一段话后有两个空格，并且后面文字换行写，则会解析为换行</p>
-<h4 id="粗体-斜体"><a href="#粗体-斜体" class="headerlink" title="粗体 斜体"></a>粗体 斜体</h4><p><em>这是斜体</em>  <em>这也是斜体</em></p>
-<p><strong>这是粗体</strong></p>
-<p><strong><em>这是粗体加斜体</em></strong></p>
-<h4 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h4><p><del>删除线</del></p>
-<p>该MarkdownPad不支持删除线，它也不是经典markdown中的要素</p>
-<h4 id="标题（6级标题，可以省略后面的）"><a href="#标题（6级标题，可以省略后面的）" class="headerlink" title="标题（6级标题，可以省略后面的）"></a>标题（6级标题，可以省略后面的）</h4><p><strong>可以选择性地「闭合」标题，在行尾加上 #，纯粹只是美观用的。</strong><br><strong>行尾的 # 数量也不用和开头一样（行首的井字符数量决定标题的阶数）</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">###### 这是H6</div><div class="line">##### 这是H5</div><div class="line">#### 这是H4</div><div class="line">### 这是H3</div><div class="line">## 这是H2</div><div class="line"># 这是H1</div></pre></td></tr></table></figure>
-<p><strong>H1和H2也可以采用:文本下方添加底线。（底线的长短不要求）</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">H1也可以这样</div><div class="line">=====</div><div class="line">H2也可以这样</div><div class="line">---</div></pre></td></tr></table></figure></p>
-<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><blockquote>
-<p>通常在首行加上大于号来添加引用内容</p>
-<blockquote>
-<p>引用可以嵌套引用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;# 还可以嵌套其他格式</div></pre></td></tr></table></figure></p>
-</blockquote>
-</blockquote>
-<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p><strong>无序列表：用+或者-或者星号来写无序列表，注意这些符号后要加空格</strong></p>
-<ul>
-<li>111</li>
-<li>222</li>
-<li>333</li>
-</ul>
-<hr>
-<ul>
-<li>aaa</li>
-<li>bbb</li>
-<li>ccc</li>
-</ul>
-<hr>
-<ul>
-<li>qqq</li>
-<li>www</li>
-<li>eee</li>
-</ul>
-<p><strong>有序列表：用数字接着一个英文句点,英文句点后要有空格</strong></p>
-<p><strong>并且列表前面的数字是几，并不会影响显示。比如：以下两种显示相同</strong></p>
-<ol>
-<li>ppppppp</li>
-<li>ooooooo</li>
-<li>iiiiiii</li>
-</ol>
-<hr>
-<ol>
-<li>oippop</li>
-<li>uoipkinl</li>
-<li>hojojoko</li>
-</ol>
-<h4 id="内联代码"><a href="#内联代码" class="headerlink" title="内联代码???"></a>内联代码???</h4><p><strong>用单引号标记内联代码，会解析成html标签。这样，代码中的&amp; &lt; &gt;符号都会自动转义</strong></p>
-<p>‘function fn(){<br>    var a = ‘7’;<br>    if(i&gt;’5’){<br>        return true;<br>    }<br>}’</p>
-<h4 id="代码区域（两种方式）"><a href="#代码区域（两种方式）" class="headerlink" title="代码区域（两种方式）???"></a>代码区域（两种方式）???</h4><p><strong>第一种方式：在代码首行空4个空格</strong></p>
-<pre><code>&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;HTML代码&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p><strong>第二种方式：github的风格——代码段的前后都用三个单引号独占一行来标记。目前主流编辑器都支持这种风格</strong></p>
-<p><strong>github格式只能一行显示？？</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;  </div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;title&gt;HTML标题&lt;/title&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;body&gt;HTML内容&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
-<h4 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h4><p><strong>用三个以上的星号、减号、底线来建立一个分隔线，独占一行</strong></p>
-<hr>
-<hr>
-<hr>
-<p><strong>可以在三个以上的星号、减号、底线里添加任意的空格</strong></p>
-<hr>
-<hr>
-<hr>
-<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p><strong>行内式</strong></p>
-<p><a href="http://www.baidu.com" target="_blank" rel="external">这是百度链接</a></p>
-<p><a href="http://www.baidu.com" title="百度title" target="_blank" rel="external">这是一个带着title的百度链接</a></p>
-<p>会被解释为<br><a href="http://example.com/" target="_blank" rel="external">an example</a><br><a href="http://example.com/" title="Optional Title" target="_blank" rel="external">an example</a></p>
-<p><strong>非行内式（两句的顺序不限制）</strong></p>
-<p><a href="http://www.baidu.com" title="百度title" target="_blank" rel="external">百度链接</a></p>
-<h4 id="图像"><a href="#图像" class="headerlink" title="图像"></a>图像</h4><p><strong>行内式</strong></p>
-<p><img src="http://www.fqxyi.com/images/Blog/avatar.jpg" alt="图像alt内容"><br><img src="http://www.fqxyi.com/images/Blog/avatar.jpg" alt="图像alt内容" title="图像title"></p>
-<p><strong>非行内式</strong><br>同上</p>
-<h4 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h4><p><strong>如果链接的地址和名称一样的时候，可以简写</strong></p>
-<p><a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a></p>
-<p><strong>相当于下面写法</strong></p>
-<p><a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a></p>
-<h4 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h4><p><strong>以下字符，要在前面插入反斜杠\，才能将字符原样输出</strong></p>
-<p>\   反斜线</p>
-<p>`   反引号</p>
-<p>*   星号</p>
-<p>_   底线</p>
-<p>{}  花括号</p>
-<p>[]  方括号</p>
-<p>()  括弧</p>
-<p>#   井字号</p>
-<p>+   加号</p>
-<p>-   减号</p>
-<p>.   英文句点</p>
-<p>!   惊叹号</p>
-<h4 id="表格"><a href="#表格" class="headerlink" title="表格???"></a>表格???</h4><p><strong>表格是github风格独有的语法</strong></p>
-<p><strong>第一行的表格头部可以没有，但是第二行必须有。第二行的冒号代表居左居中还是居右；不加冒号，默认居左</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">item</th>
-<th style="text-align:right">value</th>
-<th style="text-align:center">qty</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">a</td>
-<td style="text-align:right">1</td>
-<td style="text-align:center">5</td>
-</tr>
-<tr>
-<td style="text-align:left">b</td>
-<td style="text-align:right">2</td>
-<td style="text-align:center">6</td>
-</tr>
-</tbody>
-</table>
-<p><strong>或者用html标签来构造表格</strong>  </p>
-<pre><code>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;Item&lt;/th&gt;
-&lt;th align=&quot;right&quot;&gt;Value&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;Qty&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Computer&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;$1600&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Phone&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;$12&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Pipe&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;$1&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;234&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</code></pre><h4 id="html代码"><a href="#html代码" class="headerlink" title="html代码"></a>html代码</h4><p><strong>当html代码前面没有四个空格，则会解析html代码；若有4个空格或者有三个单引号括着，则不解析代码，会直接显示代码</strong></p>
-
-          
+          <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>markdown是标记语言，通过标记语法使普通文本具有一定格式。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/23/Markdown_Note/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1460,7 +1135,7 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-27T06:29:10.104Z</updated>
+  <updated>2017-03-27T06:33:01.999Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,12 @@
     <link href="http://yoursite.com/2017/03/27/%E7%BF%BB%E5%A2%99%E6%96%B9%E6%B3%95/"/>
     <id>http://yoursite.com/2017/03/27/翻墙方法/</id>
     <published>2017-03-27T06:27:15.000Z</published>
-    <updated>2017-03-27T06:29:10.104Z</updated>
+    <updated>2017-03-27T06:33:01.999Z</updated>
     
     <content type="html"><![CDATA[<h2 id="翻墙浏览器"><a href="#翻墙浏览器" class="headerlink" title="翻墙浏览器"></a>翻墙浏览器</h2><p>特点：简单易用，免费产品的稳定性差，无法全局翻墙，只适合临时浏览网页</p>
+<a id="more"></a>
 <p>1.浏览器插件</p>
 <p>插件平台：google、QQ、360、猎豹、百度等webkit核心的浏览器。</p>
-<a id="more"></a>
 <p>使用说明：前往<a href="https://www.cloudlink.pro/cloudlink/web/index/index?operate=register&amp;fmcode=VcMhMq" target="_blank" rel="external">CloudLink</a>注册并登录，然后在上述浏览器安装CloudLink插件，就可以顺畅的访问国外网站了。</p>
 <p>Tips:CloudLink是一款付费产品，每天会有10-60分钟的随机免费体验时长。</p>
 <p>2.天行浏览器</p>
@@ -46,12 +46,10 @@
     <summary type="html">
     
       &lt;h2 id=&quot;翻墙浏览器&quot;&gt;&lt;a href=&quot;#翻墙浏览器&quot; class=&quot;headerlink&quot; title=&quot;翻墙浏览器&quot;&gt;&lt;/a&gt;翻墙浏览器&lt;/h2&gt;&lt;p&gt;特点：简单易用，免费产品的稳定性差，无法全局翻墙，只适合临时浏览网页&lt;/p&gt;
-&lt;p&gt;1.浏览器插件&lt;/p&gt;
-&lt;p&gt;插件平台：google、QQ、360、猎豹、百度等webkit核心的浏览器。&lt;/p&gt;
     
     </summary>
     
-      <category term="ShowJoy" scheme="http://yoursite.com/categories/ShowJoy/"/>
+      <category term="翻墙" scheme="http://yoursite.com/categories/%E7%BF%BB%E5%A2%99/"/>
     
     
   </entry>
@@ -60,8 +58,8 @@
     <title>跨域问题_1</title>
     <link href="http://yoursite.com/2017/03/24/%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98_1/"/>
     <id>http://yoursite.com/2017/03/24/跨域问题_1/</id>
-    <published>2017-03-24T09:40:46.545Z</published>
-    <updated>2017-03-24T09:58:29.018Z</updated>
+    <published>2017-03-24T06:27:15.000Z</published>
+    <updated>2017-03-27T06:41:02.303Z</updated>
     
     <content type="html"><![CDATA[<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -77,8 +75,8 @@
         例如中国是.cn，美国是.us，日本是.jp等；
     （2）国际顶级域名：
         工商企业的 .Com，表示网络提供商的.net，表示非盈利组织的.org。
-
-    注意：
+</code></pre><a id="more"></a>    
+<pre><code>    注意：
         大多数域名争议都发生在com的顶级域名下，因为多数公司上网的目的都是为了赢利。
         国际组织经过广泛协商，在原来三个国际通用顶级域名的基础上，
         新增加了7个国际通用顶级域名：
@@ -149,9 +147,21 @@
 &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
 &amp;lt;head&amp;gt;
     &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;跨
+    &amp;lt;title&amp;gt;跨域问题&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;!-- 域：(Domain)
+ 1.顶级域名
+    （1）国家顶级域名：
+        200多个国家都按照ISO3166国家代码分配了顶级域名，
+        例如中国是.cn，美国是.us，日本是.jp等；
+    （2）国际顶级域名：
+        工商企业的 .Com，表示网络提供商的.net，表示非盈利组织的.org。
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
+    
+      <category term="跨域问题" scheme="http://yoursite.com/categories/%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"/>
     
     
   </entry>
@@ -160,8 +170,8 @@
     <title>jQuery中ajax的4种常用请求方式</title>
     <link href="http://yoursite.com/2017/03/24/jQuery%E4%B8%ADajax%E7%9A%844%E7%A7%8D%E5%B8%B8%E7%94%A8%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
     <id>http://yoursite.com/2017/03/24/jQuery中ajax的4种常用请求方式/</id>
-    <published>2017-03-24T09:26:47.092Z</published>
-    <updated>2017-03-24T09:43:14.158Z</updated>
+    <published>2017-03-24T03:27:15.000Z</published>
+    <updated>2017-03-27T06:41:23.538Z</updated>
     
     <content type="html"><![CDATA[<pre><code>&lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -180,8 +190,8 @@
 // $.ajax()返回其创建的 XMLHttpRequest 对象。  
 // $.ajax() 只有一个参数：参数 key/value 对象，包含各配置及回调函数信息。  
 // 如果你指定了 dataType 选项，请确保服务器返回正确的 MIME 信息，(如 xml 返回 &quot;text/xml&quot;)
-
- // $.ajax({
+</code></pre><a id="more"></a>
+<pre><code> // $.ajax({
  //        type: &quot;post&quot;,
  //        dataType: &quot;html&quot;,//服务器返回的文本格式
  //        url: &apos;/Resources/GetList.ashx&apos;,
@@ -250,9 +260,24 @@ $.getJSON(
 &amp;lt;head&amp;gt;
     &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
     &amp;lt;title&amp;gt;请求接口的方式&amp;lt;/title&amp;gt;
- 
+    &amp;lt;script src=&amp;quot;jquery-1.9.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&amp;lt;script&amp;gt;
+
+/*jQuery中ajax的4种常用请求方式：*/
+// 1----------------------------  
+// $.ajax()返回其创建的 XMLHttpRequest 对象。  
+// $.ajax() 只有一个参数：参数 key/value 对象，包含各配置及回调函数信息。  
+// 如果你指定了 dataType 选项，请确保服务器返回正确的 MIME 信息，(如 xml 返回 &amp;quot;text/xml&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
+    
+      <category term="前端请求方式" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/"/>
     
     
   </entry>
@@ -261,14 +286,12 @@ $.getJSON(
     <title>面试——中高级JS程序员</title>
     <link href="http://yoursite.com/2017/03/24/%E9%9D%A2%E8%AF%95_%E4%B8%AD%E9%AB%98%E7%BA%A7JS%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
     <id>http://yoursite.com/2017/03/24/面试_中高级JS程序员/</id>
-    <published>2017-03-24T09:05:24.192Z</published>
-    <updated>2017-03-24T09:17:16.519Z</updated>
+    <published>2017-03-24T01:27:15.000Z</published>
+    <updated>2017-03-27T06:47:07.477Z</updated>
     
-    <content type="html"><![CDATA[<p>/*</p>
-<pre><code>1. 考察对JS中同步和异步代码的区别、
-   变量作用域、
-   闭包等概念有正确的理解
-</code></pre><p>*/</p>
+    <content type="html"><![CDATA[<p>/<em><br> 1.考察对JS中同步和异步代码的区别、<br>   变量作用域、<br>   闭包等概念有正确的理解
+ </em>/</p>
+<a id="more"></a>
 <pre><code>for (var i = 0; i &lt; 5; i++) {
     setTimeout(function() {
         console.log(new Date, i);
@@ -404,15 +427,12 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
     
     <summary type="html">
     
-      &lt;p&gt;/*&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1. 考察对JS中同步和异步代码的区别、
-   变量作用域、
-   闭包等概念有正确的理解
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;*/&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;for (var i = 0; i &amp;lt; 5; i++) {
-    se
+      &lt;p&gt;/&lt;em&gt;&lt;br&gt; 1.考察对JS中同步和异步代码的区别、&lt;br&gt;   变量作用域、&lt;br&gt;   闭包等概念有正确的理解
+ &lt;/em&gt;/&lt;/p&gt;
     
     </summary>
+    
+      <category term="Javascript面试" scheme="http://yoursite.com/categories/Javascript%E9%9D%A2%E8%AF%95/"/>
     
     
   </entry>
@@ -421,10 +441,11 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
     <title>Markdown简介</title>
     <link href="http://yoursite.com/2017/03/23/Markdown_Note/"/>
     <id>http://yoursite.com/2017/03/23/Markdown_Note/</id>
-    <published>2017-03-23T09:57:15.919Z</published>
-    <updated>2017-03-24T08:31:16.096Z</updated>
+    <published>2017-03-23T02:27:15.000Z</published>
+    <updated>2017-03-27T06:36:17.612Z</updated>
     
     <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>markdown是标记语言，通过标记语法使普通文本具有一定格式。</p>
+<a id="more"></a>
 <p>具有衍生版本（eg：表格、脚本、内嵌HTML），它们能让markdown转换成更多的格式，例如：LaTeX、Docbook</p>
 <p>markdown中增强版中比较有名的是Markdown Extra、MultiMarkdown、Maruku等。这些衍生版本要么基于工具，eg：Pandoc；要么基于GitHub和Wikipedia，在语法上基本兼容。</p>
 <h3 id="markdown编辑器推荐"><a href="#markdown编辑器推荐" class="headerlink" title="markdown编辑器推荐"></a>markdown编辑器推荐</h3><h4 id="在线版"><a href="#在线版" class="headerlink" title="在线版"></a>在线版</h4><p>dillinger（来自国外、不够稳定）——支持md、html、pdf文件导出<br>StackEdit——对中文支持不好<br>MaHua——小众软件推荐、界面有点简陋<br>简书（博客平台）——需要注册帐号后编辑、每几秒钟便会自动存入一个备份、直接从本地拖入照片生成链接<br>马克飞象——付费软件</p>
@@ -579,9 +600,10 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
     <summary type="html">
     
       &lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;markdown是标记语言，通过标记语法使普通文本具有一定格式。&lt;/p&gt;
-&lt;p&gt;具有衍生版本（eg：表格、脚本、内嵌HTML），它们能让ma
     
     </summary>
+    
+      <category term="Markdown标记语言" scheme="http://yoursite.com/categories/Markdown%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/"/>
     
     
   </entry>
