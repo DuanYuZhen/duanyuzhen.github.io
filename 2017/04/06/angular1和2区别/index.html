@@ -116,7 +116,7 @@ Angular2不是从Angular1升级过来的，Angular2是重写的，所以他们�
 Angular2最大的一个变更，就是框架整体上的components基于TypeScript。默认用TypeScript写。所以angular1和angular2从设定之初就是不一样的。并且TypeScript的语法和Java或者C">
 <meta property="og:image" content="http://duanyuzhen.github.io/images/imgs/6.png">
 <meta property="og:image" content="http://duanyuzhen.github.io/images/imgs/5.png">
-<meta property="og:updated_time" content="2017-04-07T03:36:31.751Z">
+<meta property="og:updated_time" content="2017-04-07T04:16:58.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Angular1 和 Angular2 区别">
 <meta name="twitter:description" content="概述
@@ -394,15 +394,25 @@ import { Component } from ‘angular 2/core’;
 export class ProductComponent {
  prods = { name: ‘Prod1’, quantity: 1 };
 }
-</code></pre><p>6.Angular 2中, 指令的结构、用法作了一些调整，比如1中的ng-repeat被*ngFor替代<br>    ///Angular 1.x structural directives:……..<br>    <ul><br>        <li ng-repeat="item in items"><br>            <br>        </li><br>    </ul></p>
-<pre><code>///Angular 2 structural directives:.............
+</code></pre><p>6.Angular 2中, 指令的结构、用法作了一些调整，比如1中的ng-repeat被*ngFor替代</p>
+<pre><code>///Angular 1.x structural directives:........
+&lt;ul&gt;
+    &lt;li ng-repeat=&quot;item in items&quot;&gt;
+        {{item.name}}
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+///Angular 2 structural directives:.............
 &lt;ul&gt;
     &lt;li *ngFor=&quot;#item of items&quot;&gt;
         {{item.name}}
     &lt;/li&gt;
 &lt;/ul&gt;
-</code></pre><p>7.双向数据绑定: [(ngModel)]的写法替换了ng-model<br>    ///Angular 1.x, two-way data binding using ‘ng-model’……….<br>    <input ng-model="technology.name"> </p>
-<pre><code>/////In Angular 2,two-way data binding using &apos;[(ngModel)]&apos;..........
+</code></pre><p>7.双向数据绑定: [(ngModel)]的写法替换了ng-model</p>
+<pre><code>///Angular 1.x, two-way data binding using &apos;ng-model&apos;..........
+&lt;input ng-model=&quot;technology.name&quot;&gt;&lt;/input&gt; 
+
+/////In Angular 2,two-way data binding using &apos;[(ngModel)]&apos;..........
 &lt;input [(ngModel)]=&quot;http://technology.name&quot;&gt;&lt;/input&gt;
 </code></pre><p>8.Angular 2主要的性能优化改进是使用了分层依赖注入系统.这些优化改进是angular2的速度比angular1的速度提高很多</p>
 <p>9.Angular 2的大小是20kb左右，相对于angular1体积减少很多</p>
