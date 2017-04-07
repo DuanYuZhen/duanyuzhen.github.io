@@ -104,19 +104,16 @@
 
 
 
-<meta name="description" content="/ 1.考察对JS中同步和异步代码的区别、   变量作用域、   闭包等概念有正确的理解
- /">
+<meta name="description" content="1.考察对JS中同步和异步代码的区别、   变量作用域、   闭包等概念有正确的理解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面试——中高级JS程序员">
 <meta property="og:url" content="http://yoursite.com/2017/03/24/面试_中高级JS程序员/index.html">
 <meta property="og:site_name" content="莲青儿的博客">
-<meta property="og:description" content="/ 1.考察对JS中同步和异步代码的区别、   变量作用域、   闭包等概念有正确的理解
- /">
-<meta property="og:updated_time" content="2017-03-27T06:47:07.477Z">
+<meta property="og:description" content="1.考察对JS中同步和异步代码的区别、   变量作用域、   闭包等概念有正确的理解">
+<meta property="og:updated_time" content="2017-03-27T07:07:55.617Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试——中高级JS程序员">
-<meta name="twitter:description" content="/ 1.考察对JS中同步和异步代码的区别、   变量作用域、   闭包等概念有正确的理解
- /">
+<meta name="twitter:description" content="1.考察对JS中同步和异步代码的区别、   变量作用域、   闭包等概念有正确的理解">
 
 
 
@@ -362,8 +359,7 @@
       
 
       
-        <p>/<em><br> 1.考察对JS中同步和异步代码的区别、<br>   变量作用域、<br>   闭包等概念有正确的理解
- </em>/</p>
+        <p> 1.考察对JS中同步和异步代码的区别、<br>   变量作用域、<br>   闭包等概念有正确的理解</p>
 <a id="more"></a>
 <pre><code>for (var i = 0; i &lt; 5; i++) {
     setTimeout(function() {
@@ -382,11 +378,18 @@ console.log(new Date, i);
 // 时间：
 // 第1个5直接输出  是最后那个console.log()输出的。
 // 1秒之后，输出5个5 是for里的console.log()。
-</code></pre><p>/<em><br>    2.追问：期望代码的输出变成：5 -&gt; 0,1,2,3,4<br>            第1个5直接输出<br>            1秒之后，输出5个数：0，1，2，3，4
-</em>/</p>
-<p>/<em><br>    解决：两种合格方式、一种不合格方式
-</em>/</p>
-<pre><code>// （1）闭包
+
+
+2.追问：期望代码的输出变成：5 -&gt; 0,1,2,3,4
+        第1个5直接输出
+        1秒之后，输出5个数：0，1，2，3，4
+
+
+
+解决：两种合格方式、一种不合格方式
+
+
+// （1）闭包
 for (var i = 0; i &lt; 5; i++) {
     (function(j) {  // j = i
         setTimeout(function() {
@@ -417,12 +420,17 @@ for (let i = 0; i &lt; 5; i++) {
     }, 1000);
 }
 console.log(new Date, i);
-</code></pre><p>/<em><br>    3.追问：期望代码的输出变成 0 -&gt; 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5
-</em>/</p>
-<p>// 熟悉和掌握异步操作的流程控制是成为合格开发者的基本功</p>
-<p>/<em><br>    解决：
-</em>/</p>
-<pre><code>// （1）粗暴有效的方法，但不能加分
+
+
+
+
+
+3.追问：期望代码的输出变成 0 -&gt; 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5
+</code></pre><p>// 熟悉和掌握异步操作的流程控制是成为合格开发者的基本功</p>
+<pre><code>解决：
+
+
+// （1）粗暴有效的方法，但不能加分
 // 面试官真正想考察的是候选人是否具备某种能力和素质，因为在现代的前端开发中，处理异步的代码随处可见，熟悉和掌握异步操作的流程控制是成为合格开发者的基本功
 for (var i = 0; i &lt; 5; i++) {
     (function(j) {
@@ -494,8 +502,7 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
     await sleep(1000);
     console.log(new Date, i);
 })();
-</code></pre><p>/<em><br>多数面试官在决定聘用某个候选人之前还需要考察另外一项重要能力，即技术自驱力。<br>直白的说就是：像有内部的马达在驱动他，用漂亮的方式解决工程领域的问题，不断的跟随业务和技术变得越来越牛逼<br>对于前端工程师的成长期许：扎实的语言基础、与时俱进的能力、强大技术自驱力。
-</em>/<br></p>
+</code></pre><p>多数面试官在决定聘用某个候选人之前还需要考察另外一项重要能力，即技术自驱力。<br>直白的说就是：像有内部的马达在驱动他，用漂亮的方式解决工程领域的问题，不断的跟随业务和技术变得越来越牛逼<br>对于前端工程师的成长期许：扎实的语言基础、与时俱进的能力、强大技术自驱力。</p>
 
       
     </div>
@@ -603,7 +610,7 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -611,7 +618,7 @@ const sleep = (timeountMS) =&gt; new Promise((resolve) =&gt; {
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
