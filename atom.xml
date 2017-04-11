@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-06T16:07:01.501Z</updated>
+  <updated>2017-04-11T07:13:40.968Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,15 +16,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>利用nvm安装和多个Node.js版本之间切换</title>
+    <link href="http://yoursite.com/2017/04/07/nvm/"/>
+    <id>http://yoursite.com/2017/04/07/nvm/</id>
+    <published>2017-04-07T05:00:15.000Z</published>
+    <updated>2017-04-11T07:13:40.968Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h2><p>nvm全称是Node Version Manager</p>
+<a id="more"></a>
+<h2 id="nvm配置步骤"><a href="#nvm配置步骤" class="headerlink" title="nvm配置步骤"></a>nvm配置步骤</h2><p>去以下网站下载nvm windows版本:<br><a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="external">https://github.com/coreybutler/nvm-windows/releases</a></p>
+<p>用nvm install 6.1.0 下载相应版本的node.js</p>
+<p>在cmd中做如下操作来保证node可以用：<br>1、 输入nvm list 查看当前所有安装好的nodejs版本<br>2、 输入 nvm use 4.4.3 来使nodejs4.4.3版本为当前使用状态<br>3、再次输入nvm list后会看到4.4.3后面多了一个标记使用的文字提醒</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;nvm&quot;&gt;&lt;a href=&quot;#nvm&quot; class=&quot;headerlink&quot; title=&quot;nvm&quot;&gt;&lt;/a&gt;nvm&lt;/h2&gt;&lt;p&gt;nvm全称是Node Version Manager&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="nvm和Node.js版本切换" scheme="http://yoursite.com/categories/nvm%E5%92%8CNode-js%E7%89%88%E6%9C%AC%E5%88%87%E6%8D%A2/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>TypeScript</title>
     <link href="http://yoursite.com/2017/04/06/TypeScript/"/>
     <id>http://yoursite.com/2017/04/06/TypeScript/</id>
     <published>2017-04-06T15:11:15.000Z</published>
-    <updated>2017-04-06T16:07:01.501Z</updated>
+    <updated>2017-04-11T07:12:44.107Z</updated>
     
     <content type="html"><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><ol>
 <li>TypeScript是JavaScript的超集，而且本质上向这个语言添加了基于类的面向对象编程。可以编译成javascript。</li>
-<li>TypeScript可以在任何浏览器、任何计算机和任何操作系统上运行，并且是开源的。</li>
+<li>TypeScript可以在任何浏览器、任何计算机和任何操作系统上运行，并且是开源的。<a id="more"></a></li>
 <li>TypeScript扩展了JavaScript的语法，所以任何现有的JavaScript程序可以不加改变的在TypeScript下工作。</li>
 <li>并且TypeScript增加了对ECMAScript 6的语法的支持，符合Javascript的发展方向。eg：直接定义一个类。</li>
 </ol>
@@ -33,7 +58,8 @@
     <summary type="html">
     
       &lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;TypeScript是JavaScript的超集，而且本质上向这个语言添加了基于类的面向对象编程。可以编译成javascript
+&lt;li&gt;TypeScript是JavaScript的超集，而且本质上向这个语言添加了基于类的面向对象编程。可以编译成javascript。&lt;/li&gt;
+&lt;li&gt;TypeScript可以在任何浏览器、任何计算机和任何操作系统上运行，并且是开源的。
     
     </summary>
     
@@ -47,10 +73,13 @@
     <link href="http://yoursite.com/2017/04/06/angular1%E5%92%8C2%E5%8C%BA%E5%88%AB/"/>
     <id>http://yoursite.com/2017/04/06/angular1和2区别/</id>
     <published>2017-04-06T06:00:15.000Z</published>
-    <updated>2017-04-07T04:16:58.496Z</updated>
+    <updated>2017-04-11T07:14:02.219Z</updated>
     
     <content type="html"><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><ol>
 <li>Angular2不是从Angular1升级过来的，Angular2是重写的，所以他们之间的差别比较大，不是你用过1就能直接上手2的，计划可以认为是一个新的框架。</li>
+</ol>
+<a id="more"></a>
+<ol>
 <li>Angular2最大的一个变更，就是框架整体上的components基于TypeScript。默认用TypeScript写。所以angular1和angular2从设定之初就是不一样的。并且TypeScript的语法和Java或者C#非常类似，因此对于从后端转过来的开发者来说，学习这门语言是没有难度的。</li>
 <li>Angular1.x在设计之初主要是针对pc端的，对移动端支持较少（当然也有其他一些衍生框架如ionic），而Angular2是设计包含移动端的。</li>
 <li>Angular 1的核心概念是$scope，但是angular2中没有$scope，angular2使用zone.js来记录监测变化。</li>
@@ -156,7 +185,8 @@ myApp.controller(&apos;MyController&apos;, MyController);
     <summary type="html">
     
       &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;Angular2不是从Angular1升级过来的，Angular2是重写的，所以他们之间的差别比较大，不是你用过1就能直接上手2
+&lt;li&gt;Angular2不是从Angular1升级过来的，Angular2是重写的，所以他们之间的差别比较大，不是你用过1就能直接上手2的，计划可以认为是一个新的框架。&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
@@ -170,10 +200,11 @@ myApp.controller(&apos;MyController&apos;, MyController);
     <link href="http://yoursite.com/2017/03/31/angular2.0_2/"/>
     <id>http://yoursite.com/2017/03/31/angular2.0_2/</id>
     <published>2017-03-31T01:50:15.000Z</published>
-    <updated>2017-03-31T08:30:33.952Z</updated>
+    <updated>2017-04-11T07:13:06.316Z</updated>
     
     <content type="html"><![CDATA[<p><strong>本文的内容已经过期了，Angular2现在已经完全基于TypeScript开发了</strong></p>
 <h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p><em>疑问：Angular不就是一个框架么，搞什么环境搭建，不是像angular1那样引入一个angular.js就搞定了么？</em></p>
+<a id="more"></a>
 <ol>
 <li>Angular2.x与Angular1.x是雷锋与雷峰塔的区别</li>
 <li>Angular2.x是不兼容Angular1.x的，所在在框架的构造上，它们是完全不同的</li>
@@ -394,7 +425,7 @@ gulp.task(&apos;clean&apos;, function(done) {
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt;本文的内容已经过期了，Angular2现在已经完全基于TypeScript开发了&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&quot;环境搭建&quot;&gt;&lt;a href=&quot;#环境搭建&quot; class=&quot;headerlink&quot; title=&quot;环境搭建&quot;&gt;&lt;/a&gt;环境搭建&lt;/h3&gt;
+&lt;h3 id=&quot;环境搭建&quot;&gt;&lt;a href=&quot;#环境搭建&quot; class=&quot;headerlink&quot; title=&quot;环境搭建&quot;&gt;&lt;/a&gt;环境搭建&lt;/h3&gt;&lt;p&gt;&lt;em&gt;疑问：Angular不就是一个框架么，搞什么环境搭建，不是像angular1那样引入一个angular.js就搞定了么？&lt;/em&gt;&lt;/p&gt;
     
     </summary>
     
