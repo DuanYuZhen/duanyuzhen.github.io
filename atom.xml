@@ -45,21 +45,16 @@
     <link href="http://yoursite.com/2017/04/06/TypeScript/"/>
     <id>http://yoursite.com/2017/04/06/TypeScript/</id>
     <published>2017-04-06T15:11:15.000Z</published>
-    <updated>2017-04-11T07:12:44.107Z</updated>
+    <updated>2017-04-11T07:24:05.402Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><ol>
-<li>TypeScript是JavaScript的超集，而且本质上向这个语言添加了基于类的面向对象编程。可以编译成javascript。</li>
-<li>TypeScript可以在任何浏览器、任何计算机和任何操作系统上运行，并且是开源的。<a id="more"></a></li>
-<li>TypeScript扩展了JavaScript的语法，所以任何现有的JavaScript程序可以不加改变的在TypeScript下工作。</li>
-<li>并且TypeScript增加了对ECMAScript 6的语法的支持，符合Javascript的发展方向。eg：直接定义一个类。</li>
-</ol>
+    <content type="html"><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>1.TypeScript是JavaScript的超集，而且本质上向这个语言添加了基于类的面向对象编程。可以编译成javascript。<br>2.TypeScript可以在任何浏览器、任何计算机和任何操作系统上运行，并且是开源的。</p>
+<a id="more"></a>
+<p>3.TypeScript扩展了JavaScript的语法，所以任何现有的JavaScript程序可以不加改变的在TypeScript下工作。<br>4.并且TypeScript增加了对ECMAScript 6的语法的支持，符合Javascript的发展方向。eg：直接定义一个类。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;TypeScript是JavaScript的超集，而且本质上向这个语言添加了基于类的面向对象编程。可以编译成javascript。&lt;/li&gt;
-&lt;li&gt;TypeScript可以在任何浏览器、任何计算机和任何操作系统上运行，并且是开源的。
+      &lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;p&gt;1.TypeScript是JavaScript的超集，而且本质上向这个语言添加了基于类的面向对象编程。可以编译成javascript。&lt;br&gt;2.TypeScript可以在任何浏览器、任何计算机和任何操作系统上运行，并且是开源的。&lt;/p&gt;
     
     </summary>
     
