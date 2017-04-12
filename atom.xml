@@ -66,13 +66,10 @@
     <link href="http://yoursite.com/2017/04/06/angular1%E5%92%8C2%E5%8C%BA%E5%88%AB/"/>
     <id>http://yoursite.com/2017/04/06/angular1和2区别/</id>
     <published>2017-04-06T06:00:15.000Z</published>
-    <updated>2017-04-11T07:14:02.219Z</updated>
+    <updated>2017-04-12T03:14:54.318Z</updated>
     
     <content type="html"><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><ol>
-<li>Angular2不是从Angular1升级过来的，Angular2是重写的，所以他们之间的差别比较大，不是你用过1就能直接上手2的，计划可以认为是一个新的框架。</li>
-</ol>
-<a id="more"></a>
-<ol>
+<li>Angular2不是从Angular1升级过来的，Angular2是重写的，所以他们之间的差别比较大，不是你用过1就能直接上手2的，计划可以认为是一个新的框架。 <a id="more"></a></li>
 <li>Angular2最大的一个变更，就是框架整体上的components基于TypeScript。默认用TypeScript写。所以angular1和angular2从设定之初就是不一样的。并且TypeScript的语法和Java或者C#非常类似，因此对于从后端转过来的开发者来说，学习这门语言是没有难度的。</li>
 <li>Angular1.x在设计之初主要是针对pc端的，对移动端支持较少（当然也有其他一些衍生框架如ionic），而Angular2是设计包含移动端的。</li>
 <li>Angular 1的核心概念是$scope，但是angular2中没有$scope，angular2使用zone.js来记录监测变化。</li>
@@ -178,8 +175,7 @@ myApp.controller(&apos;MyController&apos;, MyController);
     <summary type="html">
     
       &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;Angular2不是从Angular1升级过来的，Angular2是重写的，所以他们之间的差别比较大，不是你用过1就能直接上手2的，计划可以认为是一个新的框架。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;Angular2不是从Angular1升级过来的，Angular2是重写的，所以他们之间的差别比较大，不是你用过1就能直接上手2的，计划可以认为是一个新的框架。
     
     </summary>
     
