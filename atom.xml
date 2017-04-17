@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-11T07:13:40.968Z</updated>
+  <updated>2017-04-17T02:22:04.044Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,258 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>产品</title>
+    <link href="http://yoursite.com/2017/04/17/%E4%BA%A7%E5%93%81/"/>
+    <id>http://yoursite.com/2017/04/17/产品/</id>
+    <published>2017-04-17T02:27:15.000Z</published>
+    <updated>2017-04-17T02:22:04.044Z</updated>
+    
+    <content type="html"><![CDATA[<p>帮用户尽快作出购买决策:<br>1.广告推荐——&gt;进入网站</p>
+<p>2.挑选商品：<br>（1）购买目标明确：直接搜索——&gt;搜索品牌、搜索品类<br>（2）购买目标不明确：先看导购——&gt;主要看的是首页内容，营销导购、内容导购<br><strong><em>导购商品的目的：让用户快速购买商品  
+</em></strong>导购商品的手段：折扣促销、特价、抢购等<br><em>*</em>导购商品的关键：首屏的钩子模块<br>     （a）产品中常用的钩子模块有：秒杀模块、今日爆款、人气冠军、抢红包、领金币、猜你喜欢、限时抢、整点抢购、必抢等。<br>    （b）钩子模块作用：吸引用户点击、降低跳失率、强化用户对平台的认知。  </p>
+<p>3.决定购买（价格因素、信任因素(买过用户的评价)、卖家的承诺）  </p>
+<p>4.再次购买：<br>    进行使用红包、优惠券或者积分<br>    还有就是老用户的定期唤醒（通过推送活动、优惠等）</p>
+<p>5.帮用户找到购买理由：<br>    （a）价格刺激——省钱<br>    （b）优惠刺激——省钱<br>    （c）库存数量刺激——量少<br>    （d）打消用户的顾虑——买过的用户的评论</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;帮用户尽快作出购买决策:&lt;br&gt;1.广告推荐——&amp;gt;进入网站&lt;/p&gt;
+&lt;p&gt;2.挑选商品：&lt;br&gt;（1）购买目标明确：直接搜索——&amp;gt;搜索品牌、搜索品类&lt;br&gt;（2）购买目标不明确：先看导购——&amp;gt;主要看的是首页内容，营销导购、内容导购&lt;br&gt;&lt;strong&gt;&lt;
+    
+    </summary>
+    
+      <category term="产品" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>小程序</title>
+    <link href="http://yoursite.com/2017/04/17/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://yoursite.com/2017/04/17/小程序/</id>
+    <published>2017-04-17T02:27:15.000Z</published>
+    <updated>2017-04-17T02:25:19.071Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="小程序是什么？"><a href="#小程序是什么？" class="headerlink" title="小程序是什么？"></a>小程序是什么？</h2><p>不需要下载安装，用户扫一扫或搜一下就能打开的应用</p>
+<p>基于微信、类web、媲美原生、解决方案</p>
+<hr>
+<h2 id="小程序特点："><a href="#小程序特点：" class="headerlink" title="小程序特点："></a>小程序特点：</h2><p>更加轻量、更新实时、跨平台，即一次开发, 多端兼容</p>
+<p>依托于微信的大流量：相对较低的开发和运营推广成本</p>
+<p>近乎于原生的性能体验</p>
+<hr>
+<h2 id="小程序的缺点："><a href="#小程序的缺点：" class="headerlink" title="小程序的缺点："></a>小程序的缺点：</h2><p>CSS中无法使用本地资源, 如图片,字体。</p>
+<p>小程序页面只能同时打开5个，如果交互流程较长难以支持。</p>
+<p>同时只能存在5个url请求。</p>
+<p>无法跳转小程序以外的url。</p>
+<p>没有开放cookie读写能力。</p>
+<p>没有开放加载web页面。需使用官方提供的组件</p>
+<hr>
+<h2 id="小程序开发流程："><a href="#小程序开发流程：" class="headerlink" title="小程序开发流程："></a>小程序开发流程：</h2><p>1、帐号申请——&gt;2.完善信息——&gt;3.提交代码——&gt;4.审核发布</p>
+<hr>
+<h2 id="小程序开发技术："><a href="#小程序开发技术：" class="headerlink" title="小程序开发技术："></a>小程序开发技术：</h2><p>前端：  js——&gt;HTML——&gt;CSS</p>
+<p>小程序：js——&gt;WXML——&gt;WXSS</p>
+<hr>
+<h2 id="app类型："><a href="#app类型：" class="headerlink" title="app类型："></a>app类型：</h2><p>web app、原生app、Hybrid app</p>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;小程序是什么？&quot;&gt;&lt;a href=&quot;#小程序是什么？&quot; class=&quot;headerlink&quot; title=&quot;小程序是什么？&quot;&gt;&lt;/a&gt;小程序是什么？&lt;/h2&gt;&lt;p&gt;不需要下载安装，用户扫一扫或搜一下就能打开的应用&lt;/p&gt;
+&lt;p&gt;基于微信、类web、媲美原生、解决方
+    
+    </summary>
+    
+      <category term="小程序" scheme="http://yoursite.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端html基础</title>
+    <link href="http://yoursite.com/2017/04/13/%E5%89%8D%E7%AB%AFcss%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2017/04/13/前端css基础/</id>
+    <published>2017-04-13T03:21:15.000Z</published>
+    <updated>2017-04-13T11:45:32.336Z</updated>
+    
+    <content type="html"><![CDATA[<p>长时间专注于项目的开发，项目只是对基础知识片面的应用，适当的回顾一下最最基础的知识点。觉得资料中知识点有点零散，回顾的同时又来整理了一下…</p>
+<h2 id="字体样式"><a href="#字体样式" class="headerlink" title="字体样式"></a>字体样式</h2><pre><code>color:red;//字体颜色
+font-size:10px;//字体大小
+font-weight:500;//字体粗细
+//在开发网站时，不会仅仅只设置一种样式的字体
+//字体格式，还有：&quot;SimSun&quot;即宋体 
+font-family:&quot;microsoft Yahei&quot;;
+font-style:italic;//斜体,还有oblique实体
+text-align:center;
+</code></pre><h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p>标签选择器：  </p>
+<pre><code>&lt;span&gt;1111&lt;/span&gt;
+span {
+    color:green;
+}
+</code></pre><p>类选择器： </p>
+<pre><code>&lt;span class=&quot;spn&quot;&gt;2222&lt;/span&gt;
+.spn {
+    color:green;
+}
+</code></pre><p>id选择器：  </p>
+<pre><code>&lt;span id=&quot;spn&quot;&gt;3333&lt;/span&gt;
+#spn {
+    color:green;
+}
+</code></pre><p>后代选择器：  </p>
+<pre><code>后代选择器是：标签内的所有后代中筛选  
+.div1 div .p3 span {
+    color: red;
+}
+</code></pre><p>群组选择器：  </p>
+<pre><code>p,span {
+    color: red;
+}
+</code></pre><p>通配符：  </p>
+<pre><code> * ｛
+     color:red;
+｝
+</code></pre><p>交集选择器：</p>
+<p>交集选择器是：既是p标签，又是类名为aa的标签<br>    p.aa {<br>        color:red;<br>    }</p>
+<h2 id="css样式的特点"><a href="#css样式的特点" class="headerlink" title="css样式的特点"></a>css样式的特点</h2><h3 id="css样式的继承"><a href="#css样式的继承" class="headerlink" title="css样式的继承"></a>css样式的继承</h3><p>后代元素如果没有自己的样式修饰，就会继承父元素的样式。</p>
+<h3 id="css样式的优先级"><a href="#css样式的优先级" class="headerlink" title="css样式的优先级"></a>css样式的优先级</h3><p>当样式发生冲突的时候：<br>（1）id选择器&gt;类选择器&gt;标签选择器<br>（2）当选择器类型相同的时候，选择器越多 优先级越高。</p>
+<h3 id="css样式设置的标签类型"><a href="#css样式设置的标签类型" class="headerlink" title="css样式设置的标签类型"></a>css样式设置的标签类型</h3><p>行内标签：宽高可设置，并且不单独占一行</p>
+<pre><code>某标签 ｛
+    display:inline-block;
+｝
+</code></pre><p>块级标签：宽高不能设置，单独占一行</p>
+<pre><code>某标签 ｛
+    display:block;
+｝
+</code></pre><h2 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h2><p>伪类:即a标签被点击的4种状态的样式设置</p>
+<p><strong>点击前的状态：</strong></p>
+<pre><code>a:link {
+    background-color: blue;
+    color: white;
+}
+</code></pre><p><strong>鼠标悬浮的状态</strong></p>
+<pre><code>a:hover {
+    background-color:yellow;
+}
+</code></pre><p><strong>鼠标点击瞬间的状态</strong></p>
+<pre><code>a:active {
+    background-color: black;
+}
+</code></pre><p><strong>鼠标点击完成后的状态</strong></p>
+<pre><code>a:visited {
+    background-color: pink;
+}
+</code></pre><h2 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h2><pre><code>background-image:url(./1.png);//背景图片，默认是平铺
+background-repeat:no-repeat;背景是否重复的
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;长时间专注于项目的开发，项目只是对基础知识片面的应用，适当的回顾一下最最基础的知识点。觉得资料中知识点有点零散，回顾的同时又来整理了一下…&lt;/p&gt;
+&lt;h2 id=&quot;字体样式&quot;&gt;&lt;a href=&quot;#字体样式&quot; class=&quot;headerlink&quot; title=&quot;字体样式&quot;&gt;&lt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端html基础</title>
+    <link href="http://yoursite.com/2017/04/12/%E5%89%8D%E7%AB%AFhtml%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2017/04/12/前端html基础知识总结/</id>
+    <published>2017-04-12T07:00:15.000Z</published>
+    <updated>2017-04-13T03:46:39.923Z</updated>
+    
+    <content type="html"><![CDATA[<p>长时间专注于项目的开发，项目只是对基础知识片面的应用，适当的回顾一下最最基础的知识点。觉得资料中知识点有点零散，回顾的同时又来整理了一下…</p>
+<a id="more"></a>
+<h2 id="内容标签"><a href="#内容标签" class="headerlink" title="内容标签"></a>内容标签</h2><p><b>这是b标签</b><br><strong>这是strong标签</strong></p>
+<p><u>这是u标签</u><br><ins>这是ins标签</ins></p>
+<p><i>这是i标签</i><br><em>这是em标签</em></p>
+<p><s>这是s标签</s><br><del>这是del标签</del></p>
+<h2 id="图像标签"><a href="#图像标签" class="headerlink" title="图像标签"></a>图像标签</h2><p><img src="https://www.baidu.com/img/bd_logo1.png" width="100" height="50" title="这是度娘" alt="这是alt中内容"></p>
+<h2 id="a标签进行定位"><a href="#a标签进行定位" class="headerlink" title="a标签进行定位"></a>a标签进行定位</h2><h3 id="页内定位"><a href="#页内定位" class="headerlink" title="页内定位"></a>页内定位</h3><pre><code>&lt;a href=&quot;#part&quot;&gt;点我进入第二个部分&lt;/a&gt;
+
+以下两种方法都可以使a标签定位到：
+&lt;p id=&quot;part&quot;&gt;这是第二个部分&lt;/p&gt;
+&lt;a name=&quot;part&quot;&gt;这是第二个部分&lt;/a&gt;
+</code></pre><h3 id="跨页面定位"><a href="#跨页面定位" class="headerlink" title="跨页面定位"></a>跨页面定位</h3><pre><code>这是第一个页面：
+&lt;a href=&quot;02目标页面.html#mubiao&quot; &gt;去第二个页面&lt;/a&gt;
+
+第二个页面：
+以下两种方法都可以使a标签定位到：
+&lt;p id=&quot;mubiao&quot;&gt;这是第二个部分&lt;/p&gt;
+&lt;a name=&quot;mubiao&quot;&gt;这是第二个部分&lt;/a&gt;
+</code></pre><h2 id="html的特殊字符"><a href="#html的特殊字符" class="headerlink" title="html的特殊字符"></a>html的特殊字符</h2><font>今天天气还不错&nbsp;&nbsp;&nbsp;&nbsp;今天天气真不错</font>
+
+<font>&lt; p &gt;</font>
+
+<font>版权：&copy;</font>
+
+<font>商标：&reg;</font>
+
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><ul><br> <li>语文</li><br> <li>数学</li><br> <li>外语</li><br></ul>
+
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ol><br> <li>乒乓球</li><br> <li>羽毛球</li><br> <li>台球</li><br></ol>
+
+<h3 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h3><dl><br> <dt>运动</dt><br> <dd>游戏</dd><br> <dd>踢足球</dd><br> <dd>打篮球</dd><br> <dd>跑步</dd><br><dl><br><br><strong>把两个dt放到一个dl中：</strong><br><dl><br> <dt>1</dt><br>  <dd>12</dd><br>  <dd>13</dd><br> <dt>2</dt><br>  <dd>21</dd><br>  <dd>22</dd><br></dl>
+
+<h2 id="表格的使用"><a href="#表格的使用" class="headerlink" title="表格的使用"></a>表格的使用</h2><p>cellpadding:单元格内边距<br>cellspacing：单元格之间的边距<br>border：单元格的边框宽</p>
+<h3 id="规则表格"><a href="#规则表格" class="headerlink" title="规则表格"></a>规则表格</h3><table cellpadding="100" cellspacing="15" width="500" height="200" border="1"><br> <caption><h3>标题</h3></caption><br> <thead><br>  <tr><br>   <th>列头</th><br>   <th>列头</th><br>   <th>列头</th><br>   <th>列头</th><br>  </tr><br> </thead><br> <tbody><br>  <tr><br>   <td>内容</td><br>   <td>内容</td><br>   <td>内容</td><br>   <td>内容</td><br>  </tr><br> </tbody><br></table>
+
+<h3 id="不规则表格"><a href="#不规则表格" class="headerlink" title="不规则表格"></a>不规则表格</h3><table><br> <tr><br>  <td colspan="2">跨2个列</td><br>  <td>1</td><br> </tr><br> <tr><br>  <td rowspan="2">跨2个行</td><br>  <td>2</td><br>  <td>2</td><br> </tr><br> <tr><br>  <td>3</td><br>  <td>3</td><br> </tr><br></table>
+
+<h2 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h2><p>文本输入:<input type="text" value="文本输入框"></p>
+<p>文本输入:<input type="text" placeholder="文本输入框">    </p>
+<p>密码输入:<input type="password"></p>
+<p>性别（单选框）：</p>
+<p><input type="radio" name="gender" value="girl">女</p>
+<p><input type="radio" name="gender" value="boy">男</p>
+<p>多选框：  </p>
+<p><input type="checkbox" name="aihao" value="1">篮球</p>
+<p><input type="checkbox" name="aihao" value="2">足球</p>
+<p><input type="checkbox" name="aihao" value="3">羽毛球</p>
+<p>隐藏内容：  </p>
+<input type="hidden" value="这是一段不想让你看到的内容">
+
+<p>加载本地文件：  </p>
+<input type="file">
+
+<p>下拉列表：  </p>
+<select><br> <option>男</option><br> <option>女</option><br> <option selected="selected">保密</option><br></select>
+
+<p>多文本输入：  </p>
+<textarea cols="30" rows="10"></textarea>
+
+<p>普通按钮：  </p>
+<input type="button" value="普通按钮">
+
+<p>form表单：  </p>
+<form action="./1.html" method="post"><br> 用户名：<input type="text" name="username"><br> <input type="submit" value="登录"><br></form>
+
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><pre><code>&lt;!--S 这是莲青儿完成的--&gt;
+完成内容1
+&lt;!--E 这是莲青儿完成的--&gt;
+
+&lt;!--S 这是莲青儿完成的--&gt;
+完成内容2
+&lt;!--E 这是莲青儿完成的--&gt;
+</code></pre></dl></dl>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;长时间专注于项目的开发，项目只是对基础知识片面的应用，适当的回顾一下最最基础的知识点。觉得资料中知识点有点零散，回顾的同时又来整理了一下…&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="html" scheme="http://yoursite.com/categories/html/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>利用nvm安装和多个Node.js版本之间切换</title>
